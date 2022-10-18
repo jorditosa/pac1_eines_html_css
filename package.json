@@ -1,0 +1,30 @@
+{
+  "name": "pac_1",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorditosa/pac1_boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "frontend"
+  ],
+  "author": "Jordi Sanchez T.",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.55.0"
+  }
+}
