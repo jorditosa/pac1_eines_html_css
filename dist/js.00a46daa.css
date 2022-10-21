@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-Thin.1ce79e2a.ttf");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-Regular.abe5ea77.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-Italic.5cf91b76.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-SemiBold.de0a84e0.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-Bold.b767e7fd.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-Black.1b56900b.ttf");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins-BlackItalic.1da3cfc7.ttf");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.header {
+  background-image: url("/hero_landscape.0220da11.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__title {
+  height: 100vh;
+  margin: 20vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header__logo {
+  color: #f8fafc;
+  font-size: 4rem;
+}
+.header__logo--text {
+  color: #f8fafc;
+}
+.header__heading {
+  color: #d5fb00;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #ebff7c;
+}
+@media (min-width: 768px) {
+  .header__heading {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header__heading {
+    font-size: 6rem;
+    width: 75%;
+  }
+}
+
+.navbar {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__hamburguer {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  z-index: 99;
+  top: 3rem;
+  left: 3rem;
+  background-color: #882380;
+  cursor: pointer;
+  border: 0.3rem outset #d5fb00;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__cover {
+  background: linear-gradient(180deg, #4c8d26 25%, #882380 100%);
+  width: 1rem;
+  height: 1rem;
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.navbar__list {
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.navbar__list--item {
+  margin: 2rem 0;
+}
+.navbar__list--link {
+  color: #f8fafc;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.4rem #d5fb00;
+  letter-spacing: 0.2rem;
+  transition: letter-spacing 0.2s;
+}
+.navbar__list--link:hover {
+  letter-spacing: 0.4rem;
+}
+
+.clickHamburguer .navbar__cover {
+  transform: scale(125);
+}
+@media (min-width: 480px) {
+  .clickHamburguer .navbar__cover {
+    transform: scale(140);
+  }
+}
+@media (min-width: 768px) {
+  .clickHamburguer .navbar__cover {
+    transform: scale(200);
+  }
+}
+@media (min-width: 1024px) {
+  .clickHamburguer .navbar__cover {
+    transform: scale(250);
+  }
+}
+@media (min-width: 1600px) {
+  .clickHamburguer .navbar__cover {
+    transform: scale(300);
+  }
+}
+
+.clickHamburguer .navbar__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.line {
+  width: 3rem;
+  height: 0.4rem;
+  background-color: #f8fafc;
+  margin: 0.2rem 0;
+  transform-origin: right;
+  transition: all 0.2s;
+}
+
+.clickHamburguer .line-1 {
+  transform: rotate(-45deg);
+}
+
+.clickHamburguer .line-2 {
+  opacity: 0;
+}
+
+.clickHamburguer .line-3 {
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=/js.00a46daa.css.map */

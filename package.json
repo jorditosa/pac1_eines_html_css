@@ -6,17 +6,17 @@
     "defaults and supports es6-module",
     "maintained node versions"
   ],
-  "main": "index.js",
+  "source": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel watch-- src/index.html",
+    "prod": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jorditosa/pac1_boilerplate.git"
+    "url": "https://github.com/jorditosa/pac1_eines_html_css.git"
   },
   "keywords": [
-    "boilerplate",
+    "pac1",
     "frontend"
   ],
   "author": "Jordi Sanchez T.",
