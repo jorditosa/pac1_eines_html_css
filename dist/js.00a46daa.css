@@ -61,10 +61,12 @@ html {
 }
 
 .header {
+  position: relative;
+}
+.header__home {
   background-image: url("/hero_landscape.0220da11.jpg");
   background-position: center center;
   background-size: cover;
-  position: relative;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -102,10 +104,24 @@ html {
     width: 75%;
   }
 }
+.header h2 {
+  color: #882380;
+  padding: 3rem 8rem;
+  font-size: 3.8rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #ebff7c;
+}
+@media (min-width: 768px) {
+  .header h2 {
+    font-size: 4.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header h2 {
+    font-size: 5.2rem;
+  }
+}
 
 .navbar {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +143,7 @@ html {
   align-items: center;
 }
 .navbar__cover {
-  background: linear-gradient(180deg, #4c8d26 25%, #882380 100%);
+  background: linear-gradient(180deg, #f8fafc 50%, #d5fb00 100%);
   width: 1rem;
   height: 1rem;
   position: fixed;
@@ -148,16 +164,16 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.2s 0.1s;
 }
 .navbar__list--item {
   margin: 2rem 0;
 }
 .navbar__list--link {
-  color: #f8fafc;
+  color: #882380;
   font-size: 2.8rem;
-  font-weight: 400;
-  text-shadow: 0.1rem 0.1rem 0.4rem #d5fb00;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.4rem #f8fafc;
   letter-spacing: 0.2rem;
   transition: letter-spacing 0.2s;
 }
@@ -190,6 +206,8 @@ html {
 }
 
 .clickHamburguer .navbar__list {
+  height: 100vh;
+  width: 100%;
   opacity: 1;
   visibility: visible;
 }
@@ -204,7 +222,7 @@ html {
 }
 
 .clickHamburguer .line-1 {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-0.4rem);
 }
 
 .clickHamburguer .line-2 {
@@ -212,7 +230,7 @@ html {
 }
 
 .clickHamburguer .line-3 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateY(0.4rem);
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */

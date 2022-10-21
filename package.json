@@ -9,7 +9,9 @@
   "source": "index.js",
   "scripts": {
     "dev": "parcel watch-- src/index.html",
-    "prod": "parcel build src/index.html"
+    "prod": "parcel build src/index.html",
+    "lint": "esLint src/js/",
+    "lint-fix": "esLint src/js/ --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,9 @@
   "author": "Jordi Sanchez T.",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.5",
     "rimraf": "^3.0.2",

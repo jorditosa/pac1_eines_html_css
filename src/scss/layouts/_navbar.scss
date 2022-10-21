@@ -1,8 +1,6 @@
 @use "./../customs/globals" as *;
 
 .navbar {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +24,7 @@
   }
 
   &__cover {
-    background: linear-gradient(180deg, $primario 25%, $complementario 100%);
+    background: linear-gradient(180deg, $light 50%, $secundario 100%);
     width: 1rem;
     height: 1rem;
     position: fixed;
@@ -49,17 +47,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s;
+    transition: all 0.2s 0.1s;
 
     &--item {
       margin: 2rem 0;
     }
 
     &--link {
-      color: $light;
+      color: $complementario;
       font-size: 2.8rem;
-      font-weight: 400;
-      text-shadow: 0.1rem 0.1rem 0.4rem $secundario;
+      font-weight: 700;
+      text-shadow: 0.1rem 0.1rem 0.4rem $light;
       letter-spacing: 0.2rem;
       transition: letter-spacing 0.2s;
 
@@ -87,6 +85,8 @@
   }
 }
 .clickHamburguer .navbar__list {
+  height: 100vh;
+  width: 100%;
   opacity: 1;
   visibility: visible;
 }
@@ -101,11 +101,11 @@
 }
 
 .clickHamburguer .line-1 {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-0.4rem);
 }
 .clickHamburguer .line-2 {
   opacity: 0;
 }
 .clickHamburguer .line-3 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateY(0.4rem);
 }

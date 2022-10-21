@@ -3,11 +3,11 @@
 Curs 2022-23, Universitat Oberta de Catalunya  
 Alumne: Jordi Sanchez Torras
 
-Aquest respositori conté tot el boilerplate que servirà de base per a tots els projectes de l'assignatura.
+Aquest respositori conté la web proposada per la PAC 1, un portal sobre una zona del prepirineu català, **La Vall de Lors**.
 
 ## Boilerplate
 
-Estructura de la boilerplate
+Estructura de la boilerplate base per la creació de la PAC-1
 
 | .git  
 | dist  
@@ -18,6 +18,7 @@ Estructura de la boilerplate
 | ------ index.js  
 | ------ scss  
 | ------ index.scss  
+| ------ eslintrc.json  
 | .gitignore  
 | package-lock.json  
 | package.json  

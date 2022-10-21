@@ -177,7 +177,6 @@ module.hot.accept(reloadCSS);
 
 require("../scss/index.scss");
 // Menu hamburguesa
-
 const menuHamburguer = document.querySelector('.navbar');
 menuHamburguer.addEventListener('click', () => {
   menuHamburguer.classList.toggle('clickHamburguer');
@@ -207,7 +206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56578" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55003" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
