@@ -1,5 +1,5 @@
 @mixin borderSingle($color) {
-  border-top: 1.6rem solid $color;
+  border-bottom: 1.6rem solid $color;
 }
 @mixin borderDouble($color) {
   border-top: 1.6rem solid $color;

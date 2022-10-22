@@ -80,7 +80,14 @@ img {
 
 .container {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 5vw;
+
+  @media (min-width: $medium) {
+    padding: 0 7.5vw;
+  }
+  @media (min-width: $extra-large) {
+    padding: 0 10vw;
+  }
 }
 
 .btn {
@@ -91,4 +98,12 @@ img {
   border-radius: 1rem;
   border-bottom: 0.4rem solid $complementario;
   box-shadow: 0.1rem 0.1rem 0.2rem $dark;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $complementario;
+    border-bottom: 0.4rem solid $light;
+    color: $light;
+  }
 }

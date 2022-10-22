@@ -13,12 +13,12 @@
       href="./img/icons/favicon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./scss/index.scss" />
+    <link rel="stylesheet" href="./../scss/index.scss" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h2 class="header__heading" data-page="1"></h2>
+        <h2 class="header__heading"></h2>
       </div>
 
       <nav class="navbar">
@@ -30,10 +30,12 @@
         <div class="navbar__cover"></div>
         <ul class="navbar__list">
           <li class="navbar__list--item">
-            <a href="index.html" class="navbar__list--link">Portada</a>
+            <a href="../index.html" class="navbar__list--link">Portada</a>
           </li>
           <li class="navbar__list--item">
-            <a href="categories.html" class="navbar__list--link">Categories</a>
+            <a href="../categories.html" class="navbar__list--link"
+              >Categories</a
+            >
           </li>
           <li class="navbar__list--item">
             <a href="#" class="navbar__list--link">Presentació</a>
@@ -48,27 +50,39 @@
       </nav>
     </header>
 
-    <main class="main container"></main>
+    <main class="main container">
+      <div class="detalls__article"></div>
+      <h2>Prats de Bacies</h2>
+      <span>Guixers</span>
+      <img
+        src="./../img/Bosc-de-pi-negre-Port-del-Comte.-David-Guixé.jpg"
+        class="detalls__articles--img"
+      />
+    </main>
 
     <footer class="footer container">
-      <h2 class="footer__heading">Uneix-te a la Vall de Lord</h2>
-      <form class="footer__form">
-        <label for="email"></label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Introdueix el teu email"
-        />
-        <input type="submit" value="Envia" class="btn" />
-      </form>
-      <div class="footer__container--copyright">
-        <p class="footer__copyright--text">
-          Portal-La Vall de Lord &copy; 2022
-        </p>
+      <div class="footer__top">
+        <h2 class="footer__heading">Uneix-te a la Vall de Lord</h2>
+        <form class="footer__form">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Introdueix el teu email"
+          />
+          <input type="submit" value="Envia" class="btn" />
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__social">
+          <span class="footer__social--item">Instagram</span>
+          <span class="footer__social--item">Facebook</span>
+        </div>
+        <p class="footer__copyright">Portal-La Vall de Lord &copy; 2022</p>
       </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./../js/index.js"></script>
   </body>
 </html>
