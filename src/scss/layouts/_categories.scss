@@ -1,0 +1,61 @@
+@use "./../customs/globals" as *;
+
+.container__categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem 0;
+  border-top: 1.6rem solid $dark;
+  border-bottom: 1.6rem solid $dark;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 3.2rem;
+    top: 0;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+    background-color: $dark;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 3.2rem;
+    bottom: 0;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+    background-color: $dark;
+  }
+}
+
+.categories__item {
+  padding: 3rem 0;
+
+  & img {
+    max-height: 25rem;
+    object-fit: cover;
+  }
+
+  & figcaption {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.1rem $primario;
+  }
+  & p {
+    font-size: 1.2rem;
+  }
+  & a {
+    display: inline-block;
+    padding: 0.8rem 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

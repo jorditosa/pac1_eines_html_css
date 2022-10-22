@@ -28,6 +28,7 @@
     width: 1rem;
     height: 1rem;
     position: fixed;
+    z-index: 9;
     top: 6rem;
     left: 6rem;
     border-radius: 50%;
@@ -38,6 +39,7 @@
     width: inherit;
     height: inherit;
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
     opacity: 0;

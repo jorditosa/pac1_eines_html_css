@@ -55,9 +55,27 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   padding: 0 2rem;
+}
+
+.btn {
+  background-color: #f8fafc;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 0.4rem solid #882380;
+  box-shadow: 0.1rem 0.1rem 0.2rem #223c20;
 }
 
 .header {
@@ -147,6 +165,7 @@ html {
   width: 1rem;
   height: 1rem;
   position: fixed;
+  z-index: 9;
   top: 6rem;
   left: 6rem;
   border-radius: 50%;
@@ -156,6 +175,7 @@ html {
   width: inherit;
   height: inherit;
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   opacity: 0;
@@ -231,6 +251,62 @@ html {
 
 .clickHamburguer .line-3 {
   transform: rotate(45deg) translateY(0.4rem);
+}
+
+.container__categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem 0;
+  border-top: 1.6rem solid #223c20;
+  border-bottom: 1.6rem solid #223c20;
+  position: relative;
+}
+.container__categories::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 3.2rem;
+  top: 0;
+  left: 50%;
+  outline: none;
+  border: none;
+  transform: translateX(-50%);
+  background-color: #223c20;
+}
+.container__categories::after {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 3.2rem;
+  bottom: 0;
+  left: 50%;
+  outline: none;
+  border: none;
+  transform: translateX(-50%);
+  background-color: #223c20;
+}
+
+.categories__item {
+  padding: 3rem 0;
+}
+.categories__item img {
+  max-height: 25rem;
+  object-fit: cover;
+}
+.categories__item figcaption {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem #4c8d26;
+}
+.categories__item p {
+  font-size: 1.2rem;
+}
+.categories__item a {
+  display: inline-block;
+  padding: 0.8rem 0;
+}
+.categories__item a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */

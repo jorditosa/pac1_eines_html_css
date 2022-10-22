@@ -69,7 +69,25 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   padding: 0 2rem;
+}
+
+.btn {
+  background-color: $light;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 0.4rem solid $complementario;
+  box-shadow: 0.1rem 0.1rem 0.2rem $dark;
 }
