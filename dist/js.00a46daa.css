@@ -53,6 +53,7 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -139,6 +140,92 @@ img {
   }
 }
 
+.footer {
+  margin-top: 5rem;
+  height: 100vh;
+  color: #f8fafc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/hero_footer.76748d91.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.footer__heading {
+  text-align: center;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__heading {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__heading {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__heading {
+    font-size: 4.2rem;
+  }
+}
+.footer__container--copyright {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+}
+.footer__copyright--text {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top: 1.6rem solid #f8fafc;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer__form input:not([type=submit]) {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 0.4rem solid #882380;
+  border-radius: 1rem;
+}
+.footer__form input:not([type=submit])::placeholder, .footer__form input:not([type=submit]):focus {
+  text-align: center;
+  font-family: "Poppins, " sans-serif;
+  color: #f8fafc;
+  color: 1.2rem;
+  font-size: 1.6rem;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -153,8 +240,9 @@ img {
   left: 3rem;
   background-color: #882380;
   cursor: pointer;
-  border: 0.3rem outset #d5fb00;
+  border: none;
   border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem #223c20, -0.2rem -0.2rem 0.4rem 0.1rem #d5fb00;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,19 +260,19 @@ img {
   transition: transform 0.3s;
 }
 .navbar__list {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   position: fixed;
-  z-index: 99;
   top: 0;
   left: 0;
+  z-index: -1;
   opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s 0.1s;
+  transition: all 0.3s;
 }
 .navbar__list--item {
   margin: 2rem 0;
@@ -228,6 +316,7 @@ img {
 .clickHamburguer .navbar__list {
   height: 100vh;
   width: 100%;
+  z-index: 99;
   opacity: 1;
   visibility: visible;
 }
@@ -260,12 +349,19 @@ img {
   border-top: 1.6rem solid #223c20;
   border-bottom: 1.6rem solid #223c20;
   position: relative;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  .container__categories {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
 }
 .container__categories::before {
   content: "";
   position: absolute;
   width: 1.6rem;
-  height: 3.2rem;
+  height: 4.8rem;
   top: 0;
   left: 50%;
   outline: none;
@@ -277,7 +373,7 @@ img {
   content: "";
   position: absolute;
   width: 1.6rem;
-  height: 3.2rem;
+  height: 4.8rem;
   bottom: 0;
   left: 50%;
   outline: none;
@@ -290,11 +386,11 @@ img {
   padding: 3rem 0;
 }
 .categories__item img {
-  max-height: 25rem;
+  max-height: 20rem;
   object-fit: cover;
 }
 .categories__item figcaption {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem 0.1rem #4c8d26;
 }

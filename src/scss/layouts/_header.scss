@@ -1,4 +1,5 @@
 @use "./../customs/globals" as *;
+@use "./../customs/mixins" as *;
 
 .header {
   position: relative;

@@ -1,18 +1,24 @@
 @use "./../customs/globals" as *;
+@use "./../customs/mixins" as *;
 
 .container__categories {
   display: grid;
   grid-template-columns: 1fr;
   padding: 4rem 0;
-  border-top: 1.6rem solid $dark;
-  border-bottom: 1.6rem solid $dark;
+  @include borderDouble($dark);
   position: relative;
+  place-items: center;
+
+  @media (min-width: $medium) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
 
   &::before {
     content: "";
     position: absolute;
     width: 1.6rem;
-    height: 3.2rem;
+    height: 4.8rem;
     top: 0;
     left: 50%;
     outline: none;
@@ -24,7 +30,7 @@
     content: "";
     position: absolute;
     width: 1.6rem;
-    height: 3.2rem;
+    height: 4.8rem;
     bottom: 0;
     left: 50%;
     outline: none;
@@ -38,12 +44,12 @@
   padding: 3rem 0;
 
   & img {
-    max-height: 25rem;
+    max-height: 20rem;
     object-fit: cover;
   }
 
   & figcaption {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: 700;
     text-shadow: 0.1rem 0.1rem 0.1rem $primario;
   }

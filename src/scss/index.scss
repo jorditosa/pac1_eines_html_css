@@ -1,6 +1,8 @@
 @use "./customs/globals";
+@use "./customs/mixins";
 
 // Layouts scss
 @use "./layouts/header";
+@use "./layouts/footer";
 @use "./layouts/navbar";
 @use "./layouts/categories";

@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/Poppins/Poppins-Thin.ttf":[["Poppins-Thin.1ce79e2a.ttf","fonts/Poppins/Poppins-Thin.ttf"],"fonts/Poppins/Poppins-Thin.ttf"],"./../fonts/Poppins/Poppins-Regular.ttf":[["Poppins-Regular.abe5ea77.ttf","fonts/Poppins/Poppins-Regular.ttf"],"fonts/Poppins/Poppins-Regular.ttf"],"./../fonts/Poppins/Poppins-Italic.ttf":[["Poppins-Italic.5cf91b76.ttf","fonts/Poppins/Poppins-Italic.ttf"],"fonts/Poppins/Poppins-Italic.ttf"],"./../fonts/Poppins/Poppins-SemiBold.ttf":[["Poppins-SemiBold.de0a84e0.ttf","fonts/Poppins/Poppins-SemiBold.ttf"],"fonts/Poppins/Poppins-SemiBold.ttf"],"./../fonts/Poppins/Poppins-Bold.ttf":[["Poppins-Bold.b767e7fd.ttf","fonts/Poppins/Poppins-Bold.ttf"],"fonts/Poppins/Poppins-Bold.ttf"],"./../fonts/Poppins/Poppins-Black.ttf":[["Poppins-Black.1b56900b.ttf","fonts/Poppins/Poppins-Black.ttf"],"fonts/Poppins/Poppins-Black.ttf"],"./../fonts/Poppins/Poppins-BlackItalic.ttf":[["Poppins-BlackItalic.1da3cfc7.ttf","fonts/Poppins/Poppins-BlackItalic.ttf"],"fonts/Poppins/Poppins-BlackItalic.ttf"],"./../img/hero_landscape.jpg":[["hero_landscape.0220da11.jpg","img/hero_landscape.jpg"],"img/hero_landscape.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./../fonts/Poppins/Poppins-Thin.ttf":[["Poppins-Thin.1ce79e2a.ttf","fonts/Poppins/Poppins-Thin.ttf"],"fonts/Poppins/Poppins-Thin.ttf"],"./../fonts/Poppins/Poppins-Regular.ttf":[["Poppins-Regular.abe5ea77.ttf","fonts/Poppins/Poppins-Regular.ttf"],"fonts/Poppins/Poppins-Regular.ttf"],"./../fonts/Poppins/Poppins-Italic.ttf":[["Poppins-Italic.5cf91b76.ttf","fonts/Poppins/Poppins-Italic.ttf"],"fonts/Poppins/Poppins-Italic.ttf"],"./../fonts/Poppins/Poppins-SemiBold.ttf":[["Poppins-SemiBold.de0a84e0.ttf","fonts/Poppins/Poppins-SemiBold.ttf"],"fonts/Poppins/Poppins-SemiBold.ttf"],"./../fonts/Poppins/Poppins-Bold.ttf":[["Poppins-Bold.b767e7fd.ttf","fonts/Poppins/Poppins-Bold.ttf"],"fonts/Poppins/Poppins-Bold.ttf"],"./../fonts/Poppins/Poppins-Black.ttf":[["Poppins-Black.1b56900b.ttf","fonts/Poppins/Poppins-Black.ttf"],"fonts/Poppins/Poppins-Black.ttf"],"./../fonts/Poppins/Poppins-BlackItalic.ttf":[["Poppins-BlackItalic.1da3cfc7.ttf","fonts/Poppins/Poppins-BlackItalic.ttf"],"fonts/Poppins/Poppins-BlackItalic.ttf"],"./../img/hero_landscape.jpg":[["hero_landscape.0220da11.jpg","img/hero_landscape.jpg"],"img/hero_landscape.jpg"],"./../img/hero_footer.jpg":[["hero_footer.76748d91.jpg","img/hero_footer.jpg"],"img/hero_footer.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/index.scss");
@@ -206,7 +206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56513" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57554" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

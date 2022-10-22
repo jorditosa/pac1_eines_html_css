@@ -1,4 +1,5 @@
 @use "./../customs/globals" as *;
+@use "./../customs/mixins" as *;
 
 .navbar {
   display: flex;
@@ -14,8 +15,10 @@
     left: 3rem;
     background-color: $complementario;
     cursor: pointer;
-    border: 0.3rem outset $secundario;
+    border: none;
     border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $dark,
+      -0.2rem -0.2rem 0.4rem 0.1rem $secundario;
 
     display: flex;
     flex-direction: column;
@@ -36,12 +39,12 @@
   }
 
   &__list {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     position: fixed;
-    z-index: 99;
     top: 0;
     left: 0;
+    z-index: -1;
     opacity: 0;
     visibility: hidden;
 
@@ -49,7 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s 0.1s;
+    transition: all 0.3s;
 
     &--item {
       margin: 2rem 0;
@@ -89,6 +92,7 @@
 .clickHamburguer .navbar__list {
   height: 100vh;
   width: 100%;
+  z-index: 99;
   opacity: 1;
   visibility: visible;
 }
