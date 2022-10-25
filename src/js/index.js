@@ -1,5 +1,3 @@
-import '../scss/index.scss';
-
 // Menu hamburguesa
 const menuHamburguer = document.querySelector('.navbar');
 

@@ -1,5 +1,5 @@
-@use "./../customs/globals" as *;
-@use "./../customs/mixins" as *;
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
 
 .footer {
   margin-top: 5rem;
@@ -7,11 +7,7 @@
   color: $light;
   position: relative;
 
-  background-image: linear-gradient(
-      to bottom,
-      transparentize($light, 0.7) 0%,
-      $dark 100%
-    ),
+  background-image: linear-gradient(to bottom, transparentize($light, 0.7) 0%, $dark 100%),
     url(../img/hero_footer.jpg);
   background-position: center center;
   background-size: cover;
@@ -48,10 +44,10 @@
   &__bottom {
     width: 100%;
     display: grid;
-    place-items: start;
+    place-items: end start;
     padding-bottom: 2rem;
     font-size: 1.4rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     @include borderSingle($light);
   }
 }
@@ -64,8 +60,8 @@
   align-items: center;
   position: relative;
 
-  & input:not([type="submit"]) {
-    font-family: "Poppins", sans-serif;
+  & input:not([type='submit']) {
+    font-family: 'Poppins', sans-serif;
     background-color: transparent;
     width: 100%;
     margin: 2rem 0;
@@ -74,14 +70,47 @@
     outline: none;
     border-bottom: 0.4rem solid $complementario;
     border-radius: 1rem;
+    transition: border-color 0.4s;
 
     &::placeholder,
-    &:focus {
+    &:focus,
+    &:enabled {
       text-align: center;
-      font-family: "Poppins, " sans-serif;
+      font-family: 'Poppins, ' sans-serif;
       color: darken($color: $light, $amount: 5%);
       color: 1.2rem;
       font-size: 1.6rem;
+    }
+    &:invalid {
+      border-color: $error;
+    }
+  }
+}
+
+.footer__social {
+  width: 15vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--item {
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    & a svg {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  svg {
+    fill: $light;
+
+    &:hover {
+      fill: $secundario;
     }
   }
 }

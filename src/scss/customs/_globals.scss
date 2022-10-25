@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins/Poppins-Thin.ttf');
@@ -44,11 +46,12 @@
 }
 
 // Paleta colores
-$primario: #4c8d26;
-$secundario: #d5fb00;
-$complementario: #882380;
-$dark: #223c20;
-$light: #f8fafc;
+$primario: #6e00ee;
+$secundario: #03dac5;
+$complementario: #3700b3;
+$dark: #23036a;
+$light: #e7f6ed;
+$error: #b00020;
 
 // Breakpoints
 $small: 480px;
@@ -74,6 +77,43 @@ body {
   line-height: 1.5;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+  margin: 12vh 0;
+  position: relative;
+  @include borderDouble($dark);
+
+  @media (min-width: $medium) {
+    margin: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1.6rem;
+    height: 6rem;
+    top: 0;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+    background-color: $dark;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1.6rem;
+    height: 6rem;
+    bottom: 0;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+    background-color: $dark;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -83,9 +123,6 @@ img {
   padding: 0 5vw;
 
   @media (min-width: $medium) {
-    padding: 0 7.5vw;
-  }
-  @media (min-width: $extra-large) {
     padding: 0 10vw;
   }
 }
@@ -94,6 +131,8 @@ img {
   background-color: $light;
   padding: 1rem 2rem;
   font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   border: none;
   border-radius: 1rem;
   border-bottom: 0.4rem solid $complementario;

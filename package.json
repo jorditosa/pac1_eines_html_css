@@ -6,9 +6,9 @@
     "defaults and supports es6-module",
     "maintained node versions"
   ],
-  "source": "index.js",
+  "source": "index.html",
   "scripts": {
-    "dev": "parcel watch-- src/index.html --open --log-level 4",
+    "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html",
     "lint": "esLint src/js/",
     "lint-fix": "esLint src/js/ --fix"
@@ -24,10 +24,12 @@
   "author": "Jordi Sanchez T.",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "npm-run-all": "^4.1.5",
+    "parcel": "^2.7.0",
     "parcel-bundler": "^1.12.5",
     "pug": "^3.0.2",
     "rimraf": "^3.0.2",
