@@ -1,9 +1,9 @@
-@use "./../customs/globals" as *;
-@use "./../customs/mixins" as *;
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
 
 .container__categories {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   grid-template-rows: auto;
   padding: 5vh 0;
   @include borderDouble($dark);
@@ -11,16 +11,14 @@
   place-items: center;
 
   @media (min-width: $small) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 1.6rem;
   }
-  @media (min-width: $medium) {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+  @media (min-width: $extra-large) {
+    column-gap: 2.6rem;
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 1.6rem;
     height: 4.8rem;
@@ -32,7 +30,7 @@
     background-color: $dark;
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 1.6rem;
     height: 4.8rem;
@@ -47,6 +45,7 @@
 
 .categories__item {
   padding: 3rem 0;
+  height: 100%;
 
   & img {
     height: 25rem;
@@ -66,7 +65,7 @@
     text-shadow: 0.1rem 0.1rem 0.1rem $primario;
   }
   & p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   & a {
     display: inline-block;
