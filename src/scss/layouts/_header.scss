@@ -28,7 +28,7 @@
 
   &__logo {
     color: $light;
-    font-size: 4rem;
+    font-size: 3rem;
 
     &--text {
       color: $light;
@@ -37,8 +37,8 @@
 
   &__heading {
     color: $primario;
-    font-size: 3rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem darken($color: $light, $amount: 25%);
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem $light;
 
     @media (min-width: $medium) {
       font-size: 4.8rem;

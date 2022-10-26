@@ -1,26 +1,67 @@
 @use './../customs/globals' as *;
 @use './../customs/mixins' as *;
 
+.categories__search {
+  position: relative;
+  max-width: 40rem;
+  input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    &::placeholder,
+    &:focus,
+    &:active,
+    &:enabled {
+      color: $complementario;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+    fill: $complementario;
+    cursor: pointer;
+  }
+}
+
 .container__categories {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-template-rows: auto;
-  padding: 5vh 0;
+  padding: 4vh 0;
   position: relative;
   place-items: center;
 
   @media (min-width: $small) {
-    column-gap: 1.6rem;
+    gap: 4rem;
+    padding: 6vh 0 10vh 0;
   }
   @media (min-width: $extra-large) {
-    column-gap: 2.6rem;
+    gap: 6rem;
   }
 }
 
 .categories__item {
-  padding: 3rem 0;
   height: 100%;
 
+  &--box {
+    box-shadow: 0.2rem 0.2rem 0.4rem $dark, -0.2rem -0.2rem 0.2rem $light;
+    transition: all 0.3s;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    &:hover {
+      background-color: lighten($color: $primario, $amount: 0.6);
+      color: $light;
+      box-shadow: 0.2rem 0.2rem 0.4rem $secundario;
+    }
+  }
   & img {
     height: 25rem;
     object-fit: cover;
@@ -33,13 +74,18 @@
     }
   }
 
-  & figcaption {
+  &--title {
+    text-align: center;
     font-size: 2.6rem;
     font-weight: 700;
     text-shadow: 0.1rem 0.1rem 0.1rem $primario;
   }
   & p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+
+    @media (min-width: $extra-large) {
+      font-size: 1.6rem;
+    }
   }
   & a {
     display: inline-block;
