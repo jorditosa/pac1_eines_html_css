@@ -150,7 +150,7 @@ img {
 .header__home {
   height: 100vh;
   width: 100vw;
-  background-image: url("hero_landscape.be4acb75.jpg");
+  background-image: url("hero_landscape.438afc77.jpeg");
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -217,7 +217,7 @@ img {
 .footer {
   height: 100vh;
   color: #e7f6ed;
-  background-image: linear-gradient(#e7f6ed4d 0%, #23036a 100%), url("hero_footer.79fd9655.jpg");
+  background-image: linear-gradient(#e7f6ed4d 0%, #23036a 100%), url("hero_footer.a894d4f5.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
