@@ -1,9 +1,10 @@
-@use "./customs/globals";
-@use "./customs/mixins";
+@use './customs/globals';
+@use './customs/mixins';
 
 // Layouts scss
-@use "./layouts/header";
-@use "./layouts/footer";
-@use "./layouts/navbar";
-@use "./layouts/categories";
-@use "./layouts/articles";
+@use './layouts/topbar';
+@use './layouts/header';
+@use './layouts/footer';
+@use './layouts/navbar';
+@use './layouts/categories';
+@use './layouts/articles';

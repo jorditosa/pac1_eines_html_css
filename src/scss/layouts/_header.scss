@@ -35,6 +35,20 @@
     }
   }
 
+  &__heading--home {
+    color: $primario;
+    font-size: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem $light;
+
+    @media (min-width: $medium) {
+      font-size: 4.8rem;
+    }
+    @media (min-width: $large) {
+      font-size: 6rem;
+      width: 75%;
+    }
+  }
+
   &__heading {
     color: $primario;
     font-size: 2rem;
