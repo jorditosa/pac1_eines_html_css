@@ -8,12 +8,25 @@
     <meta name="audience" content="Everyone" />
     <meta name="robots" content="index, follow" />
     <title>Categories | La Vall de Lord</title>
-    <link rel="shortcut icon" href="./../img/icons/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./../scss/index.scss" />
+    <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./scss/index.scss" />
   </head>
   <body>
     <header class="header">
-      <section class="topbar">
+      <div class="topbar">
+        <div class="topbar__search">
+          <div class="topbar__search--box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128c0-70.7 57.2-128 128-128c70.7 0 128 57.2 128 128c0 70.7-57.2 128-128 128z"
+              />
+            </svg>
+          </div>
+        </div>
         <ul class="topbar__social">
           <li class="topbar__social--item">
             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil Instagram">
@@ -44,7 +57,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
 
       <nav class="navbar">
         <button class="navbar__hamburguer">
@@ -55,10 +68,10 @@
         <div class="navbar__cover"></div>
         <ul class="navbar__list">
           <li class="navbar__list--item">
-            <a href="../index.html" class="navbar__list--link">Portada</a>
+            <a href="./index.html" class="navbar__list--link">Portada</a>
           </li>
           <li class="navbar__list--item">
-            <a href="../categories.html" class="navbar__list--link">Categories</a>
+            <a href="./categories.html" class="navbar__list--link">Categories</a>
           </li>
           <li class="navbar__list--item">
             <a href="#" class="navbar__list--link">Presentació</a>
@@ -73,13 +86,13 @@
       </nav>
     </header>
 
-    <main class="main container">
-      <div class="detalls__article">
-        <h2 class="detalls__article--heading">Prats de Bacies</h2>
-        <span class="detalls__article--location">Guixers</span>
+    <main class="main container animate__animated animate__fadeInUp">
+      <article class="detalls__article">
+        <h2 class="header__heading">Prat de Bacies</h2>
+        <span class="detalls__article--location">- Guixers -</span>
         <picture>
-          <source srcset="../img/prat-bacies.jpg?as=webp" type="image/webp" />
-          <img src="../img/prat-bacies.jpg" alt="imatge prat de bacies" />
+          <source srcset="./img/prat-bacies.jpg?as=webp" type="image/webp" />
+          <img src="./img/prat-bacies.jpg" alt="imatge prat de bacies" />
         </picture>
         <p class="detalls__article--description">
           Sortim de Solsona per la carretera LV-4241 en direcció a coll de Jou i en aquest indret
@@ -104,12 +117,27 @@
           ullam, distinctio deleniti illo laborum officia temporibus incidunt quis corrupti totam
           suscipit. Atque quis beatae ad officia ab?
         </p>
-      </div>
+      </article>
     </main>
 
-    <section class="pagination container">
+    <section class="pagination container animate__animated animate__fadeInUp">
       <h3>Altres punts d'interés</h3>
-      <div class="random__article"></div>
+      <div class="pagination__articles">
+        <article class="pagination__articles--item">
+          <picture>
+            <source srcset="./img/prat-bacies.jpg?as=webp" type="image/webp" />
+            <img src="./img/prat-bacies.jpg" alt="imatge prat de bacies" />
+          </picture>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iusto!</p>
+        </article>
+        <article class="pagination__articles--item">
+          <picture>
+            <source srcset="./img/prat-bacies.jpg?as=webp" type="image/webp" />
+            <img src="./img/prat-bacies.jpg" alt="imatge prat de bacies" />
+          </picture>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iusto!</p>
+        </article>
+      </div>
     </section>
 
     <footer class="footer container">
@@ -126,7 +154,6 @@
         <p class="footer__copyright">Tots els drets reservats &copy; 2022</p>
       </div>
     </footer>
-
-    <script src="./../js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

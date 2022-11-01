@@ -6,10 +6,10 @@
     "defaults and supports es6-module",
     "maintained node versions"
   ],
-  "source": "index.html",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html",
+    "dev": "parcel",
+    "prod": "parcel build",
     "lint": "esLint src/js/",
     "lint-fix": "esLint src/js/ --fix"
   },
@@ -34,5 +34,8 @@
     "rimraf": "^3.0.2",
     "sass": "^1.55.0",
     "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

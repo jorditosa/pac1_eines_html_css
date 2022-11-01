@@ -35,4 +35,13 @@ Estructura de la boilerplate base per la creació de la PAC-1
 ## Tecnologies i dependències utilitzades
 
 **Parcel**
+És el bundler principal del nostre projecte.
+Aquesta eina incorpora Babel.Js per adaptar el codi JavaScript a navegadors antics.
+Per la part de css, incorpora PostCss i Autoprefixer.
 **esLint**
+Aquesta eina serveix per "lintear" el codi JavaScript i revisa totes les males pràctiques que puguin haver-hi, amb tal d epoder corretgir-les.
+
+_Dependencies extres_
+
+**animate.css**
+Aquesta llibreria montada amb Css permet afegir de manera ràpida efectes de moviment als elements els quals s'hagin afegit la classe en particular.

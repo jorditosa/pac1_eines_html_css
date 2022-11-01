@@ -3,47 +3,41 @@
 
 .detalls__article {
   position: relative;
-  padding: 10vh 0;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &--heading {
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-shadow: 0.1rem 0.1rem 0.1rem $secundario;
-
-    @media (min-width: $medium) {
-      font-size: 5.6rem;
-    }
+  @media (min-width: $medium) {
+    padding: 12rem 0;
   }
 
   &--location {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $complementario;
     font-weight: 700;
 
     @media (min-width: $medium) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 
-  &--img {
-    border-bottom-left-radius: 25%;
-    margin: 2rem;
+  & picture img {
+    border-radius: 0.5rem;
     box-shadow: 0.2rem 0.2rem 0.4rem $dark, -0.2rem -0.2rem 0.2rem $light;
-
     max-width: 80rem;
   }
 
   &--description {
-    font-size: 1.6rem;
-    padding: 2vh 0 2vh 25%;
+    font-size: 1.4rem;
+    padding: 2vh 25% 2vh 0;
 
     @media (min-width: $medium) {
-      padding: 2vh 0 2vh 50%;
-      font-size: 2.4rem;
+      font-size: 1.6rem;
+    }
+    @media (min-width: $large) {
+      font-size: 1.8rem;
     }
   }
 
@@ -55,7 +49,7 @@
       font-size: 1.6rem;
 
       @media (min-width: $medium) {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
     }
   }
@@ -65,7 +59,7 @@
     font-size: 1.6rem;
 
     @media (min-width: $medium) {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
 
     & a {
@@ -98,5 +92,19 @@
         border-radius: 0.5rem;
       }
     }
+  }
+}
+
+.pagination {
+  h3 {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: $dark;
+  }
+  &__articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 }

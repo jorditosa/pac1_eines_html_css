@@ -34,16 +34,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
 
-  padding: 4vh 0;
+  padding: 8rem 0;
   position: relative;
   place-items: center;
 
   @media (min-width: $small) {
     gap: 4rem;
-    padding: 6vh 0 10vh 0;
+    padding: 10rem 0;
+  }
+  @media (min-width: $medium) {
+    gap: 4rem;
+    padding: 16rem 0;
   }
   @media (min-width: $extra-large) {
     gap: 6rem;
+    padding: 20rem 0;
   }
 }
 
@@ -51,7 +56,7 @@
   height: 100%;
 
   &--box {
-    box-shadow: 0.2rem 0.2rem 0.4rem $dark, -0.2rem -0.2rem 0.2rem $light;
+    box-shadow: 0.2rem 0.2rem 0.6rem $dark, -0.2rem -0.2rem 0.2rem $light;
     transition: all 0.3s;
     padding: 1rem;
     border-radius: 1rem;
@@ -79,7 +84,7 @@
 
   &--title {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 700;
     text-shadow: 0.1rem 0.1rem 0.1rem $primario;
     overflow: hidden;
@@ -88,6 +93,13 @@
     -webkit-line-clamp: 1;
     line-clamp: 1;
     -webkit-box-orient: vertical;
+
+    @media (min-width: $small) {
+      font-size: 2.4rem;
+    }
+    @media (min-width: $large) {
+      font-size: 2.8rem;
+    }
   }
   & p {
     font-size: 1.2rem;
