@@ -66,12 +66,24 @@
       </nav>
     </header>
 
-    <main class="main container animate__animated animate__fadeInUp">
+    <section>
       <h2 class="header__heading">Categories</h2>
+    </section>
+
+    <main class="main container animate__animated animate__fadeInUp">
+      <nav class="categories__nav">
+        <ul class="categories__nav--list">
+          <li class="categories__nav--item active-link">Totes</li>
+          <li class="categories__nav--item">Natura</li>
+          <li class="categories__nav--item">Poblacions</li>
+          <li class="categories__nav--item">Gastronomia</li>
+          <li class="categories__nav--item">Oci</li>
+        </ul>
+      </nav>
       <ul class="container__categories">
-        <li class="categories__item">
+        <li class="categories__item" data-set="natura">
           <a href="/detall-1.html">
-            <figure class="categories__item--box">
+            <article class="categories__item--box">
               <picture>
                 <source srcset="/prat-bacies.0276367f.webp" type="image/webp">
                 <img src="/prat-bacies.2bd5394d.jpeg" alt="imatge prat de bacies">
@@ -81,15 +93,15 @@
                 Sortim de Solsona per la carretera LV-4241 en direcció a coll de Jou i en aquest
                 indret agafem la pista forestal que porta al refugi.
               </p>
-            </figure>
+            </article>
           </a>
         </li>
-        <li class="categories__item">
+        <li class="categories__item" data-set="natura">
           <a href="/detall-1.html">
-            <figure class="categories__item--box">
+            <article class="categories__item--box">
               <picture>
                 <source srcset="/mirador_creu.9e349efa.webp" type="image/webp">
-                <img src="/mirador_creu.7acaaea1.jpeg" alt="imatge prat de bacies">
+                <img src="/mirador_creu.7acaaea1.jpeg" alt="imatge mirador creu codo">
               </picture>
               <figcaption class="categories__item--title">Mirador de la Creu del Codó</figcaption>
               <p>
@@ -97,7 +109,22 @@
                 curioses formes de les muntanyes que formen la Vall de Lord. Està situat a 1.529m
                 d'altitut.
               </p>
-            </figure>
+            </article>
+          </a>
+        </li>
+        <li class="categories__item" data-set="gastronomia">
+          <a href="/detall-1.html">
+            <article class="categories__item--box">
+              <picture>
+                <source srcset="/rest_fonts_cardener.15aca6c6.webp" type="image/webp">
+                <img src="/rest_fonts_cardener.58f58589.jpeg" alt="imatge restaurant fonts cardener">
+              </picture>
+              <figcaption class="categories__item--title">Rest. Les fonts dels Cardener</figcaption>
+              <p>
+                El restaurant Fonts del Cardener ofereix una cuina tradicional però actualitzada amb
+                productes de temporada, així com especialitats a la brasa.
+              </p>
+            </article>
           </a>
         </li>
       </ul>

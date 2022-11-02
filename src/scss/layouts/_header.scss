@@ -51,23 +51,15 @@
 
   &__heading {
     position: absolute;
-    top: 2.8rem;
+    top: 4rem;
     left: 50%;
     transform: translateX(-50%);
     color: $primario;
     font-size: 2.2rem;
-    text-shadow: 0.1rem 0.1rem 0.2rem $light;
-
-    @media (min-width: $small) {
-      font-size: 3rem;
-      top: 3.4rem;
-    }
+    text-shadow: 0.1rem 0.1rem 0.2rem $secundario;
     @media (min-width: $medium) {
-      font-size: 4.8rem;
-      top: 5rem;
-    }
-    @media (min-width: $large) {
-      font-size: 6rem;
+      top: 2.2rem;
+      font-size: 5rem;
     }
   }
   h2 {
