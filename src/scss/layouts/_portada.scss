@@ -1,0 +1,71 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+.portada {
+  height: 100vh;
+  padding: 0.4rem;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'categories categories links'
+    'presentacio situacio links';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 0.4rem;
+
+  &__header {
+    grid-area: header;
+    background-image: url('../img/paissatge_complet.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2 {
+      color: $light;
+      font-size: 3rem;
+      text-shadow: 0.1rem 0.1rem 0.2rem $secundario;
+
+      @media (min-width: $medium) {
+        font-size: 3.4rem;
+      }
+      @media (min-width: $large) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__categories {
+    grid-area: categories;
+    background: radial-gradient(circle, $primario 10%, $light 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__links {
+    grid-area: links;
+    background-color: $secundario;
+  }
+  &__presentacio {
+    grid-area: presentacio;
+    background-image: url('../img/presentacio_museu.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__situacio {
+    grid-area: situacio;
+    background-color: $complementario;
+  }
+}

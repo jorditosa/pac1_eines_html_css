@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   height: 2.8rem;
-  background-color: $primario;
-  box-shadow: 0.2rem 0.2rem 0.2rem $secundario;
+  background-color: $complementario;
+  box-shadow: 0.1rem 0.1rem 0.2rem $secundario;
 
   & svg {
     width: 100%;
@@ -35,20 +35,27 @@
     margin-right: 5rem;
     height: 100%;
     display: flex;
-    justify-content: space-around;
 
     &--item {
       transition: background-color 0.5s;
 
       & a {
+        display: inline-block;
+        width: 5rem;
         height: 100%;
         display: flex;
         justify-content: center;
+        color: $light;
+        font-size: 2rem;
+        font-weight: 700;
       }
       &:hover {
         background-color: $light;
         & svg {
           fill: $dark;
+        }
+        & a {
+          color: $dark;
         }
       }
     }

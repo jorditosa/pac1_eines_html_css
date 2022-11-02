@@ -2,6 +2,7 @@
 @use './customs/mixins';
 
 // Layouts scss
+@use './layouts/portada';
 @use './layouts/topbar';
 @use './layouts/header';
 @use './layouts/footer';
