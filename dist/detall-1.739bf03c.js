@@ -533,9 +533,10 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"ebWYT":[function(require,module,exports) {
 var _navMenu = require("./assets/navMenu");
+var _filtradoCat = require("./assets/filtradoCat");
 var _animateCss = require("animate.css");
 
-},{"./assets/navMenu":"hiwK2","animate.css":"8t3va"}],"hiwK2":[function(require,module,exports) {
+},{"./assets/navMenu":"hiwK2","animate.css":"8t3va","./assets/filtradoCat":"cCMtb"}],"hiwK2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Menu hamburguesa
@@ -574,6 +575,30 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8t3va":[function() {},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequiree186")
+},{}],"8t3va":[function() {},{}],"cCMtb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "selectOpt", ()=>selectOpt);
+function selectOpt() {
+    const linkList = document.querySelectorAll(".categories__nav--item");
+    linkList.forEach((item)=>{
+        item.addEventListener("click", ()=>{
+            const activeLink = document.querySelector(".active-link");
+            // Cambios de clase
+            activeLink.classList.remove("active-link");
+            item.classList.add("active-link");
+            search(item);
+        });
+    });
+}
+function search(item) {
+    console.log(item.textContent);
+    const items = document.querySelectorAll(".categories__item");
+    console.log(items);
+// Filtrado
+}
+selectOpt();
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequiree186")
 
 //# sourceMappingURL=detall-1.739bf03c.js.map

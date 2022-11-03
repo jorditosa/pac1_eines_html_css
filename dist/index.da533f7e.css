@@ -555,6 +555,7 @@ input:not([type="submit"]):invalid {
 }
 
 .categories__nav--list {
+  border-top: .2rem solid #6e00ee;
   justify-content: space-between;
   display: flex;
 }
@@ -568,7 +569,7 @@ input:not([type="submit"]):invalid {
   padding: .8rem 0;
   font-size: 1.6rem;
   font-weight: 700;
-  transition: background-color .4s;
+  transition: all .5s;
   overflow: hidden;
 }
 
