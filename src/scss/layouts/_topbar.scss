@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 2.8rem;
   background-color: $complementario;
   box-shadow: 0.1rem 0.1rem 0.2rem $secundario;
@@ -19,19 +19,7 @@
     fill: $light;
   }
 
-  &__search {
-    width: 80%;
-    margin-left: 5rem;
-    display: flex;
-    justify-content: start;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
   &__social {
-    width: 20%;
     margin-right: 5rem;
     height: 100%;
     display: flex;

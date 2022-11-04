@@ -14,22 +14,22 @@
   <body>
     <header class="header">
       <div class="topbar">
-        <div class="topbar__search">
-          <div class="topbar__search--box">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 512 512"
-            >
-              <path
-                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128c0-70.7 57.2-128 128-128c70.7 0 128 57.2 128 128c0 70.7-57.2 128-128 128z"
-              />
-            </svg>
-          </div>
-        </div>
         <ul class="topbar__social">
           <li class="topbar__social--item">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil Instagram">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="search button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128c0-70.7 57.2-128 128-128c70.7 0 128 57.2 128 128c0 70.7-57.2 128-128 128z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="topbar__social--item">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="perfil Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="0.88em"
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="topbar__social--item">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil Facebook">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="perfil Facebook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -77,7 +77,7 @@
             <a href="categories.html" class="navbar__list--link">Categories</a>
           </li>
           <li class="navbar__list--item">
-            <a href="#" class="navbar__list--link">Presentació</a>
+            <a href="presentació.html" class="navbar__list--link">Presentació</a>
           </li>
           <li class="navbar__list--item">
             <a href="#" class="navbar__list--link">Enllaços</a>
@@ -96,15 +96,15 @@
     <main class="main-content container animate__animated animate__fadeInUp">
       <nav class="categories__nav">
         <ul class="categories__nav--list">
-          <li class="categories__nav--item active-link" id="all">Totes</li>
-          <li class="categories__nav--item" id="nature">Natura</li>
-          <li class="categories__nav--item" id="architecture">Arquitectura</li>
-          <li class="categories__nav--item" id="gastronomy">Gastronomia</li>
-          <li class="categories__nav--item" id="leisure">Oci</li>
+          <li class="categories__nav--item active-link" data-btn="all">Totes</li>
+          <li class="categories__nav--item" data-btn="nature">Natura</li>
+          <li class="categories__nav--item" data-btn="architecture">Arquitectura</li>
+          <li class="categories__nav--item" data-btn="gastronomy">Gastronomia</li>
+          <li class="categories__nav--item" data-btn="leisure">Oci</li>
         </ul>
       </nav>
       <ul class="container__categories">
-        <li class="categories__item" data-set="natura">
+        <li class="categories__item" data-img="nature">
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
@@ -119,7 +119,7 @@
             </article>
           </a>
         </li>
-        <li class="categories__item" data-set="natura">
+        <li class="categories__item" data-img="nature">
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
@@ -135,7 +135,7 @@
             </article>
           </a>
         </li>
-        <li class="categories__item" data-set="gastronomia">
+        <li class="categories__item" data-img="gastronomy">
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
@@ -150,7 +150,7 @@
             </article>
           </a>
         </li>
-        <li class="categories__item" data-set="arquitectura">
+        <li class="categories__item" data-img="architecture">
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
@@ -162,6 +162,22 @@
                 Situat al cim de la Mola de Lord, només s'hi pot arribar a peu (uns 20 minuts). Al
                 arribar, podem admirar tota la falla de la Vall de Lord, escenari de moltes guerres
                 Carlistes.
+              </p>
+            </article>
+          </a>
+        </li>
+        <li class="categories__item" data-img="leisure">
+          <a href="./detall-1.html">
+            <article class="categories__item--box">
+              <picture>
+                <source srcset="img/neu_portcomte.jpg?as=webp" type="image/webp" />
+                <img src="img/neu_portcomte.jpg" alt="imatge neu port comte" />
+              </picture>
+              <figcaption class="categories__item--title">Esquí a Port del Comte</figcaption>
+              <p>
+                Un dels principals atractius turístics durant els mesos d'hivern és l'esquí, i cada
+                any es pot gaudir a la serra del Port del Comte, a la zona nord de la comarca del
+                Solsonés.
               </p>
             </article>
           </a>
