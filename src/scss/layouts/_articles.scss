@@ -3,14 +3,24 @@
 
 .detalls__article {
   position: relative;
-  padding: 8rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  line-height: 2;
 
-  @media (min-width: $medium) {
-    padding: 12rem 0;
+  &--heading {
+    position: absolute;
+    z-index: 99;
+    color: $light;
+    font-size: 5rem;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & picture img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    clip-path: ellipse(175% 100% at 50% 0%);
+    box-shadow: 0.2rem 0.2rem 0.4rem $dark, -0.2rem -0.2rem 0.2rem $light;
   }
 
   &--location {
@@ -25,12 +35,6 @@
     & svg {
       fill: $complementario;
     }
-  }
-
-  & picture img {
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 0.4rem $dark, -0.2rem -0.2rem 0.2rem $light;
-    max-width: 80rem;
   }
 
   &--description {
@@ -49,7 +53,7 @@
     width: 100%;
     padding: 2vh 0 2vh 10vw;
 
-    & h3 {
+    & dt {
       font-size: 1.6rem;
 
       @media (min-width: $medium) {
@@ -100,6 +104,7 @@
 }
 
 .pagination {
+  margin-top: 10vh;
   h3 {
     text-align: center;
     padding: 1rem 0;

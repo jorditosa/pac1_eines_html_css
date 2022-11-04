@@ -176,3 +176,8 @@ input:not([type='submit']) {
     border-color: $error;
   }
 }
+
+#articleMap {
+  width: 100%;
+  height: 180px;
+}

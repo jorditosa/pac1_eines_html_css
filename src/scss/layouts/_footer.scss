@@ -2,7 +2,7 @@
 @use './../customs/mixins' as *;
 
 .footer {
-  margin-top: 5rem;
+  margin-top: 10vh;
   height: 100vh;
   color: $light;
   position: relative;
@@ -12,6 +12,7 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  clip-path: ellipse(175% 100% at 50% 100%);
 
   display: flex;
   flex-direction: column;
