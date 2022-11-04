@@ -133,20 +133,24 @@ img {
 
 .btn {
   background-color: $light;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   border: none;
   border-radius: 1rem;
-  border-bottom: 0.4rem solid $complementario;
-  box-shadow: 0.1rem 0.1rem 0.2rem $dark;
+  box-shadow: 0.2rem 0.2rem 0.3rem $dark;
   transition: all 0.3s;
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   &:hover {
     cursor: pointer;
     background-color: $complementario;
-    border-bottom: 0.4rem solid $light;
+    box-shadow: 0.2rem 0.2rem 0.3rem $light;
     color: $light;
   }
 }
@@ -175,9 +179,4 @@ input:not([type='submit']) {
   &:invalid {
     border-color: $error;
   }
-}
-
-#articleMap {
-  width: 100%;
-  height: 180px;
 }
