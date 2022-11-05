@@ -9,10 +9,15 @@
     position: absolute;
     z-index: 99;
     color: $light;
-    font-size: 5rem;
-    top: 25%;
+    font-size: 3.2rem;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: $medium) {
+      top: 25%;
+      font-size: 5rem;
+    }
   }
 
   & picture img {
@@ -52,6 +57,7 @@
 
   &--list {
     width: 100%;
+    color: $dark;
 
     @media (min-width: $medium) {
       padding: 2vh 0 2vh 10vw;
@@ -105,7 +111,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, $light 95%, $dark 100%);
+        background: linear-gradient(to left, #fff 90%, $dark 100%);
         border-radius: 1rem;
       }
     }
