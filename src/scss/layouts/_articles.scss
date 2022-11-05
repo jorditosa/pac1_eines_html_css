@@ -39,9 +39,10 @@
 
   &--description {
     font-size: 1.2rem;
-    padding: 2vh 25% 2vh 0;
+    padding: 2vh 0;
 
     @media (min-width: $medium) {
+      padding: 2vh 25% 2vh 0;
       font-size: 1.4rem;
     }
     @media (min-width: $large) {
@@ -51,7 +52,10 @@
 
   &--list {
     width: 100%;
-    padding: 2vh 0 2vh 10vw;
+
+    @media (min-width: $medium) {
+      padding: 2vh 0 2vh 10vw;
+    }
 
     & dt {
       font-size: 1.6rem;
@@ -77,9 +81,14 @@
       margin: 0.5rem 0;
       color: $dark;
       font-weight: 600;
+      font-size: 1.4rem;
       padding: 0 0 0 10vw;
       position: relative;
       transition: color 0.2s;
+
+      @media (min-width: $medium) {
+        font-size: 2rem;
+      }
 
       &:hover {
         color: $complementario;
@@ -96,8 +105,8 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, $light 50%, $complementario 100%);
-        border-radius: 5rem;
+        background: linear-gradient(to right, $light 95%, $dark 100%);
+        border-radius: 1rem;
       }
     }
   }

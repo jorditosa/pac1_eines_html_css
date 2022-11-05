@@ -133,15 +133,20 @@ img {
 
 .btn {
   background-color: $light;
-  padding: 1rem 3rem;
+  padding: 0.8rem 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   border: none;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.3rem $dark;
   transition: all 0.3s;
+
+  @media (min-width: $medium) {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
 
   &:active {
     transform: scale(0.95);
