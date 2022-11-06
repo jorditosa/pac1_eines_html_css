@@ -46,11 +46,11 @@
 }
 
 // Paleta colores
-$primario: #6e00ee;
-$secundario: #03dac5;
-$complementario: #3700b3;
-$dark: #23036a;
-$light: #e7f6ed;
+$primario: #00120b;
+$secundario: #6b818c;
+$complementario: #31e981;
+$dark: #00120b;
+$light: #d8e4ff;
 $error: #b00020;
 
 // Breakpoints
@@ -82,7 +82,7 @@ body {
   height: 100%;
   margin: 10rem 0;
   position: relative;
-  @include borderDouble($dark);
+  @include borderDouble($primario);
 
   &::before {
     content: '';
@@ -94,7 +94,7 @@ body {
     outline: none;
     border: none;
     transform: translateX(-50%);
-    background-color: $dark;
+    background-color: $primario;
     box-shadow: 0.1rem 0.1rem 0.2rem $secundario;
     @media (min-width: $medium) {
       height: 3.2rem;
@@ -110,7 +110,7 @@ body {
     outline: none;
     border: none;
     transform: translateX(-50%);
-    background-color: $dark;
+    background-color: $primario;
     box-shadow: -0.1rem -0.1rem 0.2rem $secundario;
     @media (min-width: $medium) {
       height: 3.2rem;
@@ -133,6 +133,7 @@ img {
 
 .btn {
   background-color: $light;
+  color: $primario;
   padding: 0.8rem 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -141,7 +142,7 @@ img {
   border: none;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.3rem $dark;
-  transition: all 0.3s;
+  transition: background-color 0.3s ease;
 
   @media (min-width: $medium) {
     font-size: 2rem;
@@ -154,9 +155,9 @@ img {
 
   &:hover {
     cursor: pointer;
-    background-color: $complementario;
-    box-shadow: 0.2rem 0.2rem 0.3rem $light;
-    color: $light;
+    background-color: $dark;
+    box-shadow: 0.2rem 0.2rem 0.3rem $complementario;
+    color: $complementario;
   }
 }
 

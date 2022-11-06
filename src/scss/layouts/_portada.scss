@@ -10,7 +10,7 @@
     'links'
     'situacio';
 
-  background-color: darken($color: $dark, $amount: 10%);
+  background-color: $dark;
   gap: 1rem;
 
   @media (min-width: $medium) {
@@ -50,7 +50,7 @@
     text-align: center;
     color: $light;
     font-size: 1.8rem;
-    text-shadow: 0.1rem 0.1rem 1rem $dark;
+    text-shadow: 0.1rem 0.1rem 1rem $primario;
 
     @media (min-width: $small) {
       font-size: 2.2rem;

@@ -30,7 +30,7 @@
     transition: all 0.5s;
 
     &:hover {
-      background-color: lighten($color: $primario, $amount: 45%);
+      background-color: lighten($color: $complementario, $amount: 30%);
     }
 
     @media (min-width: $small) {
@@ -66,8 +66,8 @@
 
   &:hover {
     cursor: pointer;
-    background-color: $light;
-    color: $light;
+    background-color: lighten($color: $complementario, $amount: 30%);
+    color: $secundario;
     box-shadow: 0.2rem 0.2rem 0.4rem $secundario;
   }
 
@@ -94,6 +94,7 @@
   }
 
   &--title {
+    color: $dark;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
@@ -112,6 +113,7 @@
     }
   }
   & p {
+    color: $dark;
     font-size: 1.2rem;
     overflow: hidden;
     text-overflow: ellipsis;

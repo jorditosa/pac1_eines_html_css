@@ -540,9 +540,9 @@ var _animateCss = require("animate.css");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Menu hamburguesa
-const menuHamburguer = document.querySelector(".navbar");
-exports.default = menuHamburguer.addEventListener("click", ()=>{
-    menuHamburguer.classList.toggle("clickHamburguer");
+const navigationMenu = document.querySelector(".navbar");
+exports.default = navigationMenu.addEventListener("click", ()=>{
+    navigationMenu.classList.toggle("activeNav");
 });
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {

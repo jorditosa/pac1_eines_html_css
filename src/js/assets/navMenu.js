@@ -1,6 +1,6 @@
 // Menu hamburguesa
-const menuHamburguer = document.querySelector('.navbar');
+const navigationMenu = document.querySelector('.navbar');
 
-export default menuHamburguer.addEventListener('click', () => {
-  menuHamburguer.classList.toggle('clickHamburguer');
+export default navigationMenu.addEventListener('click', () => {
+  navigationMenu.classList.toggle('activeNav');
 });
