@@ -61,7 +61,7 @@
       </div>
 
       <nav class="navbar">
-        <button class="navbar__hamburguer">
+        <button class="navbar__hamburguer" aria-label="Navigation boton">
           <span class="line line-1"></span>
           <span class="line line-2"></span>
           <span class="line line-3"></span>
@@ -87,18 +87,81 @@
       </nav>
     </header>
 
-    <section>
+    <section class="container">
       <h2 class="header__heading">Presentació</h2>
+      <p class="header__heading--description">
+        En aquest apartat trobaràs tot el contingut del web i un resum de totes les activitats
+        disponibles.
+      </p>
     </section>
 
     <main class="main-content container animate__animated animate__fadeInUp">
-      <ul class="presentacio__list">
-        <li class="presentacio__list--item">Portada</li>
-        <li class="presentacio__list--item">Categories</li>
-        <li class="presentacio__list--item">Presentacio</li>
-        <li class="presentacio__list--item">Links</li>
-        <li class="presentacio__list--item">Situacio</li>
-      </ul>
+      <dl class="presentacio__list">
+        <div class="presentacio__list--item active">
+          <dt>Portada</dt>
+          <dd>
+            A la portada trobareu una presentació dels continguts principals del web, amb un accés
+            directe a cadascún d'ells.
+          </dd>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z"
+            />
+            <path d="M12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707l-1.414-1.414z" />
+          </svg>
+        </div>
+        <div class="presentacio__list--item">
+          <dt>Categories</dt>
+          <dd>
+            El contingut de Categories es presenten totes les activitats i punts d'interés a
+            realitzar i visitar a la Vall de Lord. La secció està preparada amb un petit menú de
+            nevgació per filtrar segons la categoria que es prefereixi.
+          </dd>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z"
+            />
+            <path d="M12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707l-1.414-1.414z" />
+          </svg>
+        </div>
+        <div class="presentacio__list--item">
+          <dt>Presentacio</dt>
+          <dd>Aqui s'explica tot el contingut del web, fent un petit mapa de tal.</dd>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z"
+            />
+            <path d="M12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707l-1.414-1.414z" />
+          </svg>
+        </div>
+        <div class="presentacio__list--item">
+          <dt>Links</dt>
+          <dd>
+            En la secció de links trobareu tots els enllaços oficials del portal web i links a
+            contingut de tercers utilitzats en aquesta web.
+          </dd>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z"
+            />
+            <path d="M12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707l-1.414-1.414z" />
+          </svg>
+        </div>
+        <div class="presentacio__list--item">
+          <dt>Situacio</dt>
+          <dd>
+            En la secció de situació es presenta un mapa amb els punts més rellevants per no pedre's
+            res durant la visita a la Vall de Lord. S'inclouen les localitzacions de punts d'interés
+            i activitats presentades a la secciño de categories.
+          </dd>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z"
+            />
+            <path d="M12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707l-1.414-1.414z" />
+          </svg>
+        </div>
+      </dl>
     </main>
 
     <footer class="footer container">

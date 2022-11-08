@@ -11,13 +11,13 @@
     height: 5rem;
     position: fixed;
     z-index: 999;
-    top: 3rem;
-    left: 3rem;
+    top: 1rem;
+    left: 1rem;
     background-color: $primario;
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $complementario, -0.2rem -0.2rem 0.4rem 0.1rem $light;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $light, -0.2rem -0.2rem 0.4rem 0.1rem $dark;
 
     display: flex;
     flex-direction: column;
@@ -26,9 +26,10 @@
   }
 
   &__cover {
-    background: linear-gradient(90deg, $primario 95%, $complementario 0%);
+    background: linear-gradient(90deg, $primario 98%, $light 0%);
+    border-right: 1rem solid $complementario;
     width: 100%;
-    max-width: 50rem;
+    max-width: 40rem;
     height: 100vh;
     position: fixed;
     z-index: 99;
@@ -54,14 +55,14 @@
     }
 
     &--link {
-      color: $light;
-      font-size: 2.6rem;
-      text-shadow: 0.2rem 0.2rem 0.6rem $complementario;
+      color: $white;
+      font-size: 2.2rem;
+      font-weight: 700;
       letter-spacing: 0.2rem;
       transition: letter-spacing 0.2s;
 
       @media (min-width: $medium) {
-        font-size: 3rem;
+        font-size: 2.6rem;
       }
 
       &:hover {

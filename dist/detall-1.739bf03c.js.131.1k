@@ -534,10 +534,9 @@ function hmrAcceptRun(bundle, id) {
 },{}],"ebWYT":[function(require,module,exports) {
 var _navMenu = require("./assets/navMenu");
 var _filtradoCat = require("./assets/filtradoCat");
-var _collapseMenu = require("./assets/collapseMenu");
 var _animateCss = require("animate.css");
 
-},{"./assets/navMenu":"hiwK2","animate.css":"8t3va","./assets/filtradoCat":"cCMtb","./assets/collapseMenu":"3Agy5"}],"hiwK2":[function(require,module,exports) {
+},{"./assets/navMenu":"hiwK2","animate.css":"8t3va","./assets/filtradoCat":"cCMtb"}],"hiwK2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Menu hamburguesa
@@ -614,14 +613,6 @@ navItem[0].addEventListener("click", (e)=>{
     galleryItem.forEach((item)=>{
         item.classList.remove("item-hidden");
         item.classList.add("item-visible");
-    });
-});
-
-},{}],"3Agy5":[function(require,module,exports) {
-const toggles = document.querySelectorAll(".presentacio__list--item svg");
-toggles.forEach((toggle)=>{
-    toggle.addEventListener("click", ()=>{
-        toggle.parentNode.classList.toggle("active");
     });
 });
 

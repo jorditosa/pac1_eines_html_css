@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="valldelord portal natura catalunya">
-    <meta name="author" content="Jordi Sanchez">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="valldelord portal natura catalunya" />
+    <meta name="author" content="Jordi Sanchez" />
     <title>Categories | La Vall de Lord</title>
-    <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./scss/index.scss">
+    <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./scss/index.scss" />
   </head>
   <body>
     <header class="header">
@@ -61,7 +61,7 @@
       </div>
 
       <nav class="navbar">
-        <button class="navbar__hamburguer">
+        <button class="navbar__hamburguer" aria-label="Navigation boton">
           <span class="line line-1"></span>
           <span class="line line-2"></span>
           <span class="line line-3"></span>
@@ -87,8 +87,16 @@
       </nav>
     </header>
 
-    <section>
+    <section class="container">
       <h2 class="header__heading">Categories</h2>
+      <p class="header__heading--description">
+        La Vall de Lord es troba situada al nord de la comarca del Solsonès i compren els municipis
+        de Sant Llorenç de Morunys, la Coma i la Pedra i Guixers. Sant Llorenç de Morunys és el
+        nucli de població més gran, conserva part de la seva muralla i reuneix tots els serveis de
+        la vall. La Pedra y la Coma son dos niclus de població que formen un únic municipi envoltat
+        de fonts i fagedes centenàries. Guixers és el municipi amb l'extensió de territori més
+        amplia de la vall, on la població viu viu disseminada en masies.
+      </p>
     </section>
 
     <main class="main-content container animate__animated animate__fadeInUp">
@@ -106,8 +114,8 @@
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
-                <source srcset="img/prat-bacies.jpg?as=webp" type="image/webp">
-                <img src="img/prat-bacies.jpg" alt="imatge prat de bacies">
+                <source srcset="img/prat-bacies.jpg?as=webp" type="image/webp" />
+                <img src="img/prat-bacies.jpg" alt="imatge prat de bacies" />
               </picture>
               <h3 class="categories__item--title">Prats de Bacies</h3>
               <p>
@@ -121,8 +129,8 @@
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
-                <source srcset="img/mirador_creu.jpg?as=webp" type="image/webp">
-                <img src="img/mirador_creu.jpg" alt="imatge mirador creu codo">
+                <source srcset="img/mirador_creu.jpg?as=webp" type="image/webp" />
+                <img src="img/mirador_creu.jpg" alt="imatge mirador creu codo" />
               </picture>
               <h3 class="categories__item--title">Mirador de la Creu del Codó</h3>
               <p>
@@ -137,8 +145,8 @@
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
-                <source srcset="img/rest_fonts_cardener.jpg?as=webp" type="image/webp">
-                <img src="img/rest_fonts_cardener.jpg" alt="imatge restaurant fonts cardener">
+                <source srcset="img/rest_fonts_cardener.jpg?as=webp" type="image/webp" />
+                <img src="img/rest_fonts_cardener.jpg" alt="imatge restaurant fonts cardener" />
               </picture>
               <h3 class="categories__item--title">Rest. Les fonts dels Cardener</h3>
               <p>
@@ -152,8 +160,8 @@
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
-                <source srcset="img/santuari_lord.jpg?as=webp" type="image/webp">
-                <img src="img/santuari_lord.jpg" alt="imatge santuari lord">
+                <source srcset="img/santuari_lord.jpg?as=webp" type="image/webp" />
+                <img src="img/santuari_lord.jpg" alt="imatge santuari lord" />
               </picture>
               <h3 class="categories__item--title">Santuari de Lord</h3>
               <p>
@@ -168,8 +176,8 @@
           <a href="./detall-1.html">
             <article class="categories__item--box">
               <picture>
-                <source srcset="img/neu_portcomte.jpg?as=webp" type="image/webp">
-                <img src="img/neu_portcomte.jpg" alt="imatge neu port comte">
+                <source srcset="img/neu_portcomte.jpg?as=webp" type="image/webp" />
+                <img src="img/neu_portcomte.jpg" alt="imatge neu port comte" />
               </picture>
               <h3 class="categories__item--title">Esquí a Port del Comte</h3>
               <p>
@@ -188,8 +196,8 @@
         <h2 class="footer__heading">Uneix-te a la Vall de Lord</h2>
         <form class="footer__form">
           <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Introdueix el teu email">
-          <input type="submit" value="Envia" class="btn">
+          <input type="email" name="email" id="email" placeholder="Introdueix el teu email" />
+          <input type="submit" value="Envia" class="btn" />
         </form>
       </div>
       <div class="footer__bottom">

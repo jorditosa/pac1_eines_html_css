@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"cVgJb":[function(require,module,exports) {
+})({"l4eu4":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "ba60c367739bf03c";
+module.bundle.HMR_BUNDLE_ID = "c16063b15f8f2afe";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,100 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"ebWYT":[function(require,module,exports) {
-var _navMenu = require("./assets/navMenu");
-var _filtradoCat = require("./assets/filtradoCat");
-var _collapseMenu = require("./assets/collapseMenu");
-var _animateCss = require("animate.css");
+},{}],"cK82j":[function(require,module,exports) {
 
-},{"./assets/navMenu":"hiwK2","animate.css":"8t3va","./assets/filtradoCat":"cCMtb","./assets/collapseMenu":"3Agy5"}],"hiwK2":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-// Menu hamburguesa
-const navigationMenu = document.querySelector(".navbar");
-exports.default = navigationMenu.addEventListener("click", ()=>{
-    navigationMenu.classList.toggle("activeNav");
-});
+},{}]},["l4eu4","cK82j"], "cK82j", "parcelRequiree186")
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"8t3va":[function() {},{}],"cCMtb":[function(require,module,exports) {
-// filter menu
-const navItem = document.querySelectorAll(".categories__nav--item");
-const galleryItem = document.querySelectorAll(".categories__item");
-for(let i = 0; i < navItem.length; i++)navItem[i].addEventListener("click", filterItem);
-// Seleccion del boton activo
-function setActiveItem(e) {
-    // Quitar la clase active del elemento antiguo
-    navItem.forEach((item)=>{
-        item.classList.remove("active-link");
-        // añadir la clase active al elemento seleccionado
-        e.target.classList.add("active-link");
-    });
-}
-function filterItem(e) {
-    // Activar elemento navegación seleccionado
-    setActiveItem(e);
-    // Iterar sobre los articulos
-    galleryItem.forEach((item)=>{
-        item.classList.remove("item-hidden");
-        item.classList.add("item-visible");
-        // Obtener valor atributo y clasificacion del articulo
-        const itemType = item.dataset.img;
-        // Obtener el valor del elemento del menu navegacion seleccionado
-        const navType = e.target.dataset.btn;
-        // Comenzar con el filtrado comparando valores
-        if (itemType !== navType) {
-            item.classList.remove("item-visible");
-            item.classList.add("item-hidden");
-        }
-    });
-}
-// configurando el evento click al elemento de nevagcion de Totes
-navItem[0].addEventListener("click", (e)=>{
-    setActiveItem(e);
-    galleryItem.forEach((item)=>{
-        item.classList.remove("item-hidden");
-        item.classList.add("item-visible");
-    });
-});
-
-},{}],"3Agy5":[function(require,module,exports) {
-const toggles = document.querySelectorAll(".presentacio__list--item svg");
-toggles.forEach((toggle)=>{
-    toggle.addEventListener("click", ()=>{
-        toggle.parentNode.classList.toggle("active");
-    });
-});
-
-},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequiree186")
-
-//# sourceMappingURL=detall-1.739bf03c.js.map
+//# sourceMappingURL=situacio.5f8f2afe.js.map

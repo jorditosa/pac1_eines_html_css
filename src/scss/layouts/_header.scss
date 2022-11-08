@@ -12,21 +12,22 @@
   }
 
   &__heading {
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
     color: $primario;
-    font-size: 2.2rem;
-    text-shadow: 0.1rem 0.1rem 0.2rem $secundario;
+    font-size: 3rem;
+    padding: 3rem 0;
+    text-shadow: 0.1rem 0.1rem 0.2rem $complementario;
     @media (min-width: $medium) {
-      top: 2.2rem;
       font-size: 5rem;
+      padding: 2rem 0;
+    }
+    &--description {
+      font-size: 1.4rem;
+      padding: 2rem 0;
     }
   }
   h2 {
     color: $complementario;
-    padding: 3rem 0;
     font-size: 3rem;
     text-shadow: 0.2rem 0.2rem 0.2rem lighten($color: $secundario, $amount: 25%);
 

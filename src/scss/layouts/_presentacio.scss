@@ -1,2 +1,43 @@
 @use './../customs/globals' as *;
 @use './../customs/mixins' as *;
+
+.presentacio__list {
+  padding: 5rem 0;
+  &--item {
+    background-color: transparent;
+    border: 0.1rem solid $secundario;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 3rem;
+    position: relative;
+    box-shadow: 0 0.1rem 0.3rem $complementario;
+    overflow: hidden;
+
+    & svg {
+      fill: $primario;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 8rem;
+    }
+  }
+
+  &--item.active {
+    background-color: lighten($color: $primario, $amount: 80%);
+    box-shadow: 0 0.3rem 0.6rem $dark, 0 0.3rem 0.6rem $dark;
+
+    & dd {
+      display: block;
+      width: 90%;
+    }
+  }
+  & dt {
+    font-size: 2.8rem;
+  }
+
+  & dd {
+    display: none;
+    font-size: 1.4rem;
+  }
+}
