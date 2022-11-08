@@ -5,7 +5,7 @@
   padding: 5rem 0;
   &--item {
     background-color: transparent;
-    border: 0.1rem solid $secundario;
+    border: 0.1rem solid $primario;
     border-radius: 1rem;
     margin: 2rem 0;
     padding: 2rem 3rem;
@@ -15,12 +15,16 @@
     transition: all 0.4s;
 
     & svg {
-      fill: $secundario;
+      fill: $primario;
       position: absolute;
       top: 0;
       right: 0;
-      width: 6rem;
+      width: 5rem;
       transform: rotate(0);
+
+      @media (min-width: $medium) {
+        width: 6rem;
+      }
 
       &:hover {
         cursor: pointer;
@@ -29,7 +33,7 @@
   }
 
   &--item.active {
-    background-color: lighten($color: $secundario, $amount: 35%);
+    background-color: lighten($color: $complementario, $amount: 12%);
     box-shadow: 0 0.3rem 0.6rem $dark, 0 0.3rem 0.6rem $dark;
     transition: all 0.4s;
 
@@ -41,7 +45,10 @@
     }
   }
   & dt {
-    font-size: 2.8rem;
+    font-size: 2rem;
+    @media (min-width: $medium) {
+      font-size: 2.8rem;
+    }
   }
 
   & dd {

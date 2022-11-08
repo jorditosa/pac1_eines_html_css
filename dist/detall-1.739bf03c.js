@@ -532,51 +532,11 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"ebWYT":[function(require,module,exports) {
-var _navMenu = require("./assets/navMenu");
 var _filtradoCat = require("./assets/filtradoCat");
 var _collapseMenu = require("./assets/collapseMenu");
 var _animateCss = require("animate.css");
 
-},{"./assets/navMenu":"hiwK2","animate.css":"8t3va","./assets/filtradoCat":"cCMtb","./assets/collapseMenu":"3Agy5"}],"hiwK2":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-// Menu hamburguesa
-const navigationMenu = document.querySelector(".navbar");
-exports.default = navigationMenu.addEventListener("click", ()=>{
-    navigationMenu.classList.toggle("activeNav");
-});
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"8t3va":[function() {},{}],"cCMtb":[function(require,module,exports) {
+},{"animate.css":"8t3va","./assets/filtradoCat":"cCMtb","./assets/collapseMenu":"3Agy5"}],"8t3va":[function() {},{}],"cCMtb":[function(require,module,exports) {
 // filter menu
 const navItem = document.querySelectorAll(".categories__nav--item");
 const galleryItem = document.querySelectorAll(".categories__item");

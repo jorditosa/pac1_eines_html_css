@@ -10,8 +10,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-top: 0.2rem solid $primario;
-    border-bottom: 0.2rem solid $complementario;
+    border-top: 0.3rem solid $primario;
+    border-bottom: 0.3rem solid $complementario;
 
     @media (min-width: $medium) {
       flex-direction: row;
