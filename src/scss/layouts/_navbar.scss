@@ -17,7 +17,7 @@
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $light, -0.2rem -0.2rem 0.4rem 0.1rem $dark;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $dark, -0.2rem -0.2rem 0.4rem 0.1rem $light;
 
     display: flex;
     flex-direction: column;
@@ -26,8 +26,8 @@
   }
 
   &__cover {
-    background: linear-gradient(90deg, $primario 98%, $light 0%);
-    border-right: 1rem solid $complementario;
+    background: linear-gradient(90deg, $light 98%, $complementario 0%);
+    border-right: 1rem solid $secundario;
     width: 100%;
     max-width: 40rem;
     height: 100vh;
@@ -55,7 +55,7 @@
     }
 
     &--link {
-      color: $white;
+      color: $primario;
       font-size: 2.2rem;
       font-weight: 700;
       letter-spacing: 0.2rem;

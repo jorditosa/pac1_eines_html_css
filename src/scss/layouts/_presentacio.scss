@@ -8,28 +8,36 @@
     border: 0.1rem solid $secundario;
     border-radius: 1rem;
     margin: 2rem 0;
-    padding: 3rem;
+    padding: 2rem 3rem;
     position: relative;
     box-shadow: 0 0.1rem 0.3rem $complementario;
     overflow: hidden;
+    transition: all 0.4s;
 
     & svg {
-      fill: $primario;
+      fill: $secundario;
       position: absolute;
-      top: 50%;
+      top: 0;
       right: 0;
-      transform: translateY(-50%);
-      width: 8rem;
+      width: 6rem;
+      transform: rotate(0);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
   &--item.active {
-    background-color: lighten($color: $primario, $amount: 80%);
+    background-color: lighten($color: $secundario, $amount: 35%);
     box-shadow: 0 0.3rem 0.6rem $dark, 0 0.3rem 0.6rem $dark;
+    transition: all 0.4s;
 
+    & svg {
+      transform: rotate(180deg);
+    }
     & dd {
-      display: block;
-      width: 90%;
+      height: 100%;
     }
   }
   & dt {
@@ -37,7 +45,25 @@
   }
 
   & dd {
-    display: none;
-    font-size: 1.4rem;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+
+    @media (min-width: $medium) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// Contenido interior
+
+.presentacio__list--ol li {
+  margin-left: 2rem;
+  list-style: decimal;
+
+  &::marker {
+    color: $dark;
   }
 }
