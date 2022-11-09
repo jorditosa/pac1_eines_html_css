@@ -1,0 +1,49 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+.situacio__heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $primario;
+  text-align: center;
+  margin-top: 5rem;
+
+  @media (min-width: $medium) {
+    font-size: 2rem;
+  }
+}
+.situacio__clima {
+  display: inline-block;
+  border: 0.1rem solid #31493c;
+  border-radius: 1rem;
+  margin: 1rem 0 5rem 0;
+  padding: 2rem 3rem;
+  box-shadow: 0 0.1rem 0.3rem #b3efb2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &--temp,
+  &--hum {
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem #b3efb2;
+
+    & span {
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.situacio__mapa {
+  border: 0.1rem solid #31493c;
+  border-radius: 1rem;
+  margin: 1rem 0 5rem 0;
+  padding: 2rem 3rem;
+  box-shadow: 0 0.1rem 0.3rem #b3efb2;
+  display: flex;
+}

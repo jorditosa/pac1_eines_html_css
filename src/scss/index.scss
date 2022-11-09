@@ -2,14 +2,18 @@
 @use './customs/mixins';
 @use './customs/scrollView';
 
+// Features
+@use './features/header';
+@use './features/footer';
+@use './features/topbar';
+
 // Layouts scss
 @use './layouts/portada';
-@use './layouts/topbar';
-@use './layouts/header';
-@use './layouts/footer';
 @use './layouts/navbar';
 @use './layouts/categories';
 @use './layouts/articles';
 @use './layouts/presentacio';
+@use './layouts/situacio';
+@use './layouts/az';
 
 // Importar librería de animate.css

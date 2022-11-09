@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"cVgJb":[function(require,module,exports) {
+})({"cxHer":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "ba60c367739bf03c";
+module.bundle.HMR_BUNDLE_ID = "415b13dda1daccae";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,129 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"ebWYT":[function(require,module,exports) {
-var _filtradoCat = require("./assets/filtradoCat");
-var _collapseMenu = require("./assets/collapseMenu");
-// Api de clima
-var _climaAPI = require("./assets/climaAPI");
-var _animateCss = require("animate.css");
+},{}],"6lkcl":[function(require,module,exports) {
 
-},{"animate.css":"8t3va","./assets/filtradoCat":"cCMtb","./assets/collapseMenu":"3Agy5","./assets/climaAPI":"gbOMy"}],"8t3va":[function() {},{}],"cCMtb":[function(require,module,exports) {
-// filter menu
-const navItem = document.querySelectorAll(".categories__nav--item");
-const galleryItem = document.querySelectorAll(".categories__item");
-// Seleccion del boton activo
-function setActiveItem(e) {
-    // Quitar la clase active del elemento antiguo
-    navItem.forEach((item)=>{
-        item.classList.remove("active-link");
-        // añadir la clase active al elemento seleccionado
-        e.target.classList.add("active-link");
-    });
-}
-function reseting() {
-    // Resetando el filtro
-    galleryItem.forEach((item)=>{
-        item.classList.add("item-visible");
-        item.classList.remove("item-hidden");
-    });
-}
-function filterItem(e) {
-    // Activar elemento navegación seleccionado
-    setActiveItem(e);
-    // Reseteando el filtro
-    reseting();
-    // Iterar sobre los articulos
-    galleryItem.forEach((item)=>{
-        // Obtener valor atributo y clasificacion del articulo
-        const itemType = item.dataset.img;
-        // Obtener el valor del elemento del menu navegacion seleccionado
-        const navType = e.target.dataset.btn;
-        // Comenzar con el filtrado comparando valores
-        if (navType === "all") {
-            item.classList.add("item-visible");
-            item.classList.remove("item-hidden");
-        } else if (itemType !== navType) {
-            item.classList.remove("item-visible");
-            item.classList.add("item-hidden");
-        }
-    });
-}
-navItem.forEach((item)=>{
-    item.addEventListener("click", filterItem);
-});
+},{}]},["cxHer","6lkcl"], "6lkcl", "parcelRequiree186")
 
-},{}],"3Agy5":[function(require,module,exports) {
-const toggles = document.querySelectorAll(".presentacio__list--item svg");
-toggles.forEach((toggle)=>{
-    toggle.addEventListener("click", ()=>{
-        toggle.parentNode.classList.toggle("active");
-    });
-});
-
-},{}],"gbOMy":[function(require,module,exports) {
-const container = document.querySelector(".situacio__clima");
-function spinner() {
-    const divSpinner = document.createElement("DIV");
-    divSpinner.classList.add("sk-circle");
-    divSpinner.innerHTML = `
-  <div class="sk-circle1 sk-child"></div>
-  <div class="sk-circle2 sk-child"></div>
-  <div class="sk-circle3 sk-child"></div>
-  <div class="sk-circle4 sk-child"></div>
-  <div class="sk-circle5 sk-child"></div>
-  <div class="sk-circle6 sk-child"></div>
-  <div class="sk-circle7 sk-child"></div>
-  <div class="sk-circle8 sk-child"></div>
-  <div class="sk-circle9 sk-child"></div>
-  <div class="sk-circle10 sk-child"></div>
-  <div class="sk-circle11 sk-child"></div>
-  <div class="sk-circle12 sk-child"></div>
-  `;
-    container.appendChild(divSpinner);
-}
-function limpiarSpinner() {
-    const spinnerDel = document.querySelector(".sk-circle");
-    spinnerDel.remove();
-}
-function mostrarClima(datos) {
-    // Eliminar spinner una vez hecha la conexión
-    limpiarSpinner();
-    // creando variables a mostrar
-    const { main: { temp , humidity  }  } = datos;
-    const gradosCentigrados = parseInt(temp - 273.15, 10);
-    // Crear la temperatura
-    const actualTemp = document.createElement("P");
-    actualTemp.innerHTML = `
-  <span> Temperatura </span>
-  ${gradosCentigrados} &#8451
-  `;
-    actualTemp.classList.add("situacio__clima--temp");
-    // Crear la humedad
-    const actualHum = document.createElement("P");
-    actualHum.innerHTML = `
-  <span> Humitat </span>
-  ${humidity} %
-  `;
-    actualHum.classList.add("situacio__clima--hum");
-    // Añadiendo al html
-    container.appendChild(actualTemp);
-    container.appendChild(actualHum);
-}
-function consultaClima() {
-    // Hacer consulta
-    const lat = 42.13485610158371;
-    const lon = 1.5912090609255012;
-    const apiKey = "0edec620b2d050e580ca05a552394cb3";
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-    // Mostrar el spinner de carga
-    spinner();
-    fetch(url).then((respuesta)=>respuesta.json()).then((datos)=>mostrarClima(datos));
-}
-window.onload = ()=>{
-    consultaClima();
-};
-
-},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequiree186")
-
-//# sourceMappingURL=detall-1.739bf03c.js.map
+//# sourceMappingURL=a-z.a1daccae.js.map
