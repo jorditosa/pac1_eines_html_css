@@ -29,7 +29,7 @@
     transition: all 0.5s;
 
     &:hover {
-      background-color: lighten($color: $complementario, $amount: 30%);
+      background-color: lighten($color: $complementario, $amount: 10%);
     }
 
     @media (min-width: $small) {
@@ -95,7 +95,7 @@
   &--title {
     color: $dark;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -105,10 +105,10 @@
     -webkit-box-orient: vertical;
 
     @media (min-width: $small) {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
     @media (min-width: $large) {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
   }
   & p {

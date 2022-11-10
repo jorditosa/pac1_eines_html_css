@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     font-size: 1.6rem;
-    color: $complementario;
+    color: $secundario;
 
     @media (min-width: $medium) {
       font-size: 2rem;
@@ -39,7 +39,7 @@
     & svg {
       width: 4rem;
       margin-right: 2rem;
-      fill: $complementario;
+      fill: $secundario;
     }
   }
 

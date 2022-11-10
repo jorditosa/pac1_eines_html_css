@@ -84,39 +84,6 @@ body {
   margin: 0 0 3rem 0;
   position: relative;
   @include borderDouble($primario);
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 1.6rem;
-    height: 1.6rem;
-    top: 0;
-    left: 50%;
-    outline: none;
-    border: none;
-    transform: translateX(-50%);
-    background-color: $primario;
-    box-shadow: 0.1rem 0.1rem 0.2rem $secundario;
-    @media (min-width: $medium) {
-      height: 3.2rem;
-    }
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    width: 1.6rem;
-    height: 1.6rem;
-    bottom: 0;
-    left: 50%;
-    outline: none;
-    border: none;
-    transform: translateX(-50%);
-    background-color: $primario;
-    box-shadow: -0.1rem -0.1rem 0.2rem $secundario;
-    @media (min-width: $medium) {
-      height: 3.2rem;
-    }
-  }
 }
 
 img {

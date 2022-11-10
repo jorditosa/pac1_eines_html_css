@@ -25,9 +25,10 @@
   &--temp,
   &--hum {
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem $complementario;
 
     & span {
       display: block;
@@ -46,15 +47,15 @@
   display: flex;
   position: relative;
 
-  & img{
+  & img {
     border-radius: 1rem;
     margin: 0 auto;
-   width: 100%;
+    width: 100%;
   }
 
-   // Map areas css
+  // Map areas css
 
-   & #area1::before {
+  & #area1::before {
     content: '';
     position: absolute;
     width: 2em;
@@ -68,7 +69,7 @@
 
     &:hover {
       transform: scale(1.5);
-      cursor:col-resize;
+      cursor: col-resize;
     }
   }
 }
