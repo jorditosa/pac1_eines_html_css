@@ -1219,8 +1219,8 @@ body::-webkit-scrollbar-thumb {
   border: .1rem solid #31493c;
   border-radius: 1rem;
   margin: 1rem 0 5rem;
-  padding: 2rem 3rem;
   display: flex;
+  position: relative;
   box-shadow: 0 .1rem .3rem #b3efb2;
 }
 
@@ -1230,21 +1230,22 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-.situacio__mapa {
-  position: relative;
-}
-
-.situacio__mapa:before {
+.situacio__mapa #area1:before {
   content: "";
   width: 2em;
   height: 2em;
-  z-index: 99;
-  opacity: .6;
-  background-color: #31493c;
+  z-index: 999;
+  opacity: .7;
+  background-color: #b00020;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.situacio__mapa #area1:before:hover {
+  cursor: col-resize;
+  transform: scale(1.5);
 }
 
 .az__link {

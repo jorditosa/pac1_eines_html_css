@@ -42,37 +42,33 @@
   border: 0.1rem solid #31493c;
   border-radius: 1rem;
   margin: 1rem 0 5rem 0;
-  padding: 2rem 3rem;
   box-shadow: 0 0.1rem 0.3rem #b3efb2;
   display: flex;
+  position: relative;
 
   & img{
     border-radius: 1rem;
     margin: 0 auto;
    width: 100%;
   }
-}
 
+   // Map areas css
 
-// Map areas css
+   & #area1::before {
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    background-color: $error;
+    border-radius: 50%;
+    opacity: 0.7;
 
-.situacio__mapa {
-  position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 2em;
-      height: 2em;
-      z-index: 99;
-      top: 50%;
-      left: 50%;
-      background-color: $primario;
-      border-radius: 50%;
-      opacity: 0.6;
-    
-}
-
-
-  
+    &:hover {
+      transform: scale(1.5);
+      cursor:col-resize;
+    }
+  }
 }
