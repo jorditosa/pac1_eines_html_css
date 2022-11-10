@@ -1206,7 +1206,6 @@ body::-webkit-scrollbar-thumb {
   font-family: Poppins, sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  box-shadow: .1rem .1rem .3rem #b3efb2;
 }
 
 .situacio__clima--temp span, .situacio__clima--hum span {
@@ -1223,6 +1222,29 @@ body::-webkit-scrollbar-thumb {
   padding: 2rem 3rem;
   display: flex;
   box-shadow: 0 .1rem .3rem #b3efb2;
+}
+
+.situacio__mapa img {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.situacio__mapa {
+  position: relative;
+}
+
+.situacio__mapa:before {
+  content: "";
+  width: 2em;
+  height: 2em;
+  z-index: 99;
+  opacity: .6;
+  background-color: #31493c;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .az__link {

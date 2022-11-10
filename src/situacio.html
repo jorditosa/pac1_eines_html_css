@@ -60,7 +60,7 @@
         </ul>
       </div>
 
-      <nav class="navbar">
+      <nav class="navbar animate__animated animate__slideInUp">
         <ul class="navbar__list">
           <li class="navbar__list--item">
             <a href="index.html" class="navbar__list--link">
@@ -129,7 +129,13 @@
     <main class="main-content container animate__animated animate__fadeInUp">
       <h2 class="situacio__heading">Dades meteorològiques de la Vall de Lord</h2>
       <div class="situacio__clima"></div>
-      <div class="situacio__mapa"></div>
+      <div class="situacio__mapa">
+        <img src="./img/mapa_vall.jpg" alt="mapa vall de lord" usemap="#mapa">
+        <map name="mapa">
+          <area shape="rect" coords="0,0,100,100" alt="oficina turisme" href="https://developer.mozilla.org/docs/Web/HTML"
+          target="_blank" id="area1">
+        </map>
+      </div>
     </main>
 
     <footer class="footer container">

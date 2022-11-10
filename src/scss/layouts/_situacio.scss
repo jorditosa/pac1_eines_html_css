@@ -28,7 +28,6 @@
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    box-shadow: 0.1rem 0.1rem 0.3rem #b3efb2;
 
     & span {
       display: block;
@@ -46,4 +45,34 @@
   padding: 2rem 3rem;
   box-shadow: 0 0.1rem 0.3rem #b3efb2;
   display: flex;
+
+  & img{
+    border-radius: 1rem;
+    margin: 0 auto;
+   width: 100%;
+  }
+}
+
+
+// Map areas css
+
+.situacio__mapa {
+  position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      z-index: 99;
+      top: 50%;
+      left: 50%;
+      background-color: $primario;
+      border-radius: 50%;
+      opacity: 0.6;
+    
+}
+
+
+  
 }
