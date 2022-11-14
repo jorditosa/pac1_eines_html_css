@@ -14,8 +14,7 @@
     overflow: hidden;
     transition: all 0.4s;
 
-    & svg {
-      fill: $primario;
+    & img {
       position: absolute;
       top: 0;
       right: 0;
@@ -37,7 +36,7 @@
     box-shadow: 0 0.3rem 0.6rem $dark, 0 0.3rem 0.6rem $dark;
     transition: all 0.4s;
 
-    & svg {
+    & img {
       transform: rotate(180deg);
     }
     & dd {

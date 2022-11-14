@@ -1,6 +1,41 @@
 @use './../customs/globals' as *;
 @use './../customs/mixins' as *;
 
+.az__container {
+  &--title {
+    font-size: 3rem;
+    border-bottom: 0.2rem solid $primario;
+  }
+
+  &--item a {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: $primario;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 .az__link {
-  width: 50%;
+  width: 100%;
+
+  & h3 {
+    font-size: 2rem;
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
+
+  & a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $secundario;
+    transition: all 0.4s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

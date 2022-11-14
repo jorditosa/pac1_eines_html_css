@@ -584,7 +584,7 @@ navItem.forEach((item)=>{
 });
 
 },{}],"3Agy5":[function(require,module,exports) {
-const toggles = document.querySelectorAll(".presentacio__list--item svg");
+const toggles = document.querySelectorAll(".presentacio__list--item img");
 toggles.forEach((toggle)=>{
     toggle.addEventListener("click", ()=>{
         toggle.parentNode.classList.toggle("active");

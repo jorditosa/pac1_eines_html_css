@@ -1,4 +1,4 @@
-const toggles = document.querySelectorAll('.presentacio__list--item svg');
+const toggles = document.querySelectorAll('.presentacio__list--item img');
 
 toggles.forEach((toggle) => {
   toggle.addEventListener('click', () => {

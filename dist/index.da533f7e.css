@@ -1078,8 +1078,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 .1rem .3rem #b3efb2;
 }
 
-.presentacio__list--item svg {
-  fill: #31493c;
+.presentacio__list--item img {
   width: 5rem;
   position: absolute;
   top: 0;
@@ -1088,12 +1087,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
-  .presentacio__list--item svg {
+  .presentacio__list--item img {
     width: 6rem;
   }
 }
 
-.presentacio__list--item svg:hover {
+.presentacio__list--item img:hover {
   cursor: pointer;
 }
 
@@ -1103,7 +1102,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 .3rem .6rem #001a23, 0 .3rem .6rem #001a23;
 }
 
-.presentacio__list--item.active svg {
+.presentacio__list--item.active img {
   transform: rotate(180deg);
 }
 
@@ -1216,8 +1215,42 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.5);
 }
 
+.az__container--title {
+  border-bottom: .2rem solid #31493c;
+  font-size: 3rem;
+}
+
+.az__container--item a {
+  color: #31493c;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.az__container--item a:hover {
+  text-decoration: underline;
+}
+
 .az__link {
-  width: 50%;
+  width: 100%;
+}
+
+.az__link h3 {
+  font-size: 2rem;
+}
+
+.az__link p {
+  font-size: 1.6rem;
+}
+
+.az__link a {
+  color: #7a9e7e;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all .4s;
+}
+
+.az__link a:hover {
+  text-decoration: underline;
 }
 
 :root {
