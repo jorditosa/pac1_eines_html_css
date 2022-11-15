@@ -7,6 +7,7 @@
     <meta name="author" content="Jordi Sanchez" />
     <title>Presentació | La Vall de Lord</title>
     <link rel="shortcut icon" href="./img/icons/tree.jpg" type="image/x-icon" />
+    <link rel="preload" href="./scss/index.scss" as="style" />
     <link rel="stylesheet" href="./scss/index.scss" />
   </head>
   <body>
@@ -56,78 +57,80 @@
     </section>
 
     <main class="main-content container animate__animated animate__fadeInUp">
-      <dl class="presentacio__list">
-        <div class="presentacio__list--item">
-          <dt>Portada</dt>
-          <dd>
+      <ul class="presentacio__list">
+        <li class="presentacio__list--item">
+          <h3>Portada</h3>
+          <p>
             A la portada trobareu una presentació dels continguts principals del web, amb un accés
             directe a cadascún d'ells. El títol del portal web està situat a la capçalera, a la part
             superior. A la posició esquerra al capdamunt trobareu el menú de navegació que incorpora
             links a totes les pàgines principals del web.
-            <ol class="presentacio__list--ol">
-              <li>La Vall de Lord -> que enllaça amb la portada principal.</li>
-              <li>
-                Categories -> que enllaça amb la pàgina on es mostren totes les activitats i punts
-                d'interés que destaquem de la Vall de Lord.
-              </li>
-              <li>Presentació -> Amb una pàgina amb tot el detall del contingut del web.</li>
-              <li>
-                Links -> On es troben tots els links oficials de la informació obtinguda per a la
-                construcció d'aquest lloc web.
-              </li>
-              <li>
-                Situació -> Trobareu un mapa més detallat amb els punts indicats de totes i
-                cadascuna de les experiències que es mostren a l'apartat de categories.
-              </li>
-            </ol>
+          </p>
+          <ol class="presentacio__list--ol">
+            <li>La Vall de Lord -> que enllaça amb la portada principal.</li>
+            <li>
+              Categories -> que enllaça amb la pàgina on es mostren totes les activitats i punts
+              d'interés que destaquem de la Vall de Lord.
+            </li>
+            <li>Presentació -> Amb una pàgina amb tot el detall del contingut del web.</li>
+            <li>
+              Links -> On es troben tots els links oficials de la informació obtinguda per a la
+              construcció d'aquest lloc web.
+            </li>
+            <li>
+              Situació -> Trobareu un mapa més detallat amb els punts indicats de totes i cadascuna
+              de les experiències que es mostren a l'apartat de categories.
+            </li>
+          </ol>
+          <p>
             La portada comte amb un mapa de la situació general de la Vall de Lord, i un petit
             submenú a tots els links amb la informació més detallada que s'ha emprat per a construïr
             aquest lloc web.
-          </dd>
+          </p>
           <img src="./img/icons/arrow-down-outline.svg" alt="arrow down icon" />
-        </div>
-        <div class="presentacio__list--item">
-          <dt>Categories</dt>
-          <dd>
+        </li>
+        <li class="presentacio__list--item">
+          <h3>Categories</h3>
+          <p>
             El contingut de Categories es presenten totes les activitats i punts d'interés a
             realitzar i visitar a la Vall de Lord. La secció està preparada amb un petit menú de
             nevgació per filtrar segons la categoria que es prefereixi.
-          </dd>
+          </p>
           <img src="./img/icons/arrow-down-outline.svg" alt="arrow down icon" />
-        </div>
-        <div class="presentacio__list--item">
-          <dt>Presentacio</dt>
-          <dd>Aqui s'explica tot el contingut del web, fent un petit mapa de tal.</dd>
+        </li>
+        <li class="presentacio__list--item">
+          <h3>Presentacio</h3>
+          <p>Aqui s'explica tot el contingut del web, fent un petit mapa de tal.</p>
           <img src="./img/icons/arrow-down-outline.svg" alt="arrow down icon" />
-        </div>
-        <div class="presentacio__list--item">
-          <dt>Links</dt>
-          <dd>
+        </li>
+        <li class="presentacio__list--item">
+          <h3>Links</h3>
+          <p>
             En la secció de links trobareu tots els enllaços oficials del portal web i links a
             contingut de tercers utilitzats en aquesta web.
-          </dd>
+          </p>
           <img src="./img/icons/arrow-down-outline.svg" alt="arrow down icon" />
-        </div>
-        <div class="presentacio__list--item">
-          <dt>Situacio</dt>
-          <dd>
+        </li>
+        <li class="presentacio__list--item">
+          <h3>Situacio</h3>
+          <p>
             En la secció de situació es presenta un mapa amb els punts més rellevants per no pedre's
             res durant la visita a la Vall de Lord. S'inclouen les localitzacions de punts d'interés
             i activitats presentades a la secciño de categories.
-          </dd>
+          </p>
           <img src="./img/icons/arrow-down-outline.svg" alt="arrow down icon" />
-        </div>
-      </dl>
+        </li>
+      </ul>
     </main>
 
     <section class="container az__link">
       <h3>Índex A - Z</h3>
       <p>
         En aquest enllaç podeu consultar tot el
-        <a href="./a-z.html" target="_blank">índex A - Z</a>. Aquesta secció us permet utilitzar-la
-        com a eina informativa i per a la navegació per facilitar l'ús del portal web. L'índex
-        inclou totes les paraules clau utilitzades en aquest web, temes d'interés popular i
-        funcionalitats del mateix web.
+        <a href="./a-z.html">índex A - Z</a>. Aquesta secció us permet utilitzar-la com a eina
+        informativa i per a la navegació per facilitar l'ús del portal web. L'índex inclou totes les
+        paraules clau utilitzades en aquest web, temes d'interés popular i funcionalitats del mateix
+        web.
       </p>
     </section>
 

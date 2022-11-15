@@ -18,11 +18,11 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 5rem;
+      width: 4rem;
       transform: rotate(0);
 
       @media (min-width: $medium) {
-        width: 6rem;
+        width: 5rem;
       }
 
       &:hover {
@@ -39,18 +39,22 @@
     & img {
       transform: rotate(180deg);
     }
-    & dd {
+    & p,
+    & ol,
+    & ul {
       height: 100%;
     }
   }
-  & dt {
+  & h3 {
     font-size: 2rem;
     @media (min-width: $medium) {
       font-size: 2.8rem;
     }
   }
 
-  & dd {
+  & p,
+  & ol,
+  & ul {
     position: relative;
     font-size: 1.2rem;
     text-align: justify;

@@ -7,6 +7,7 @@
     <meta name="author" content="Jordi Sanchez" />
     <title>Portada | La Vall de Lord</title>
     <link rel="shortcut icon" href="./img/icons/tree.jpg" type="image/x-icon" />
+    <link rel="preload" href="./scss/index.scss" as="style" />
     <link rel="stylesheet" href="./scss/index.scss" />
   </head>
   <body>
@@ -69,21 +70,24 @@
           <li class="portada__links--item">
             <a
               href="https://www.catalunya.com/oficina-de-turismo-de-vall-de-lord-20-2-490522?language=ca"
-              target="rel"
-              ="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               >Oficina de Tursime</a
             >
           </li>
           <li class="portada__links--item">
-            <a href="https://openweathermap.org/city/3108747" target="rel" ="noopener noreferrer"
+            <a
+              href="https://openweathermap.org/city/3108747"
+              target="_blank"
+              rel="noopener noreferrer"
               >Temps actual</a
             >
           </li>
           <li class="portada__links--item">
             <a
               href="https://www.ccma.cat/tv3/alacarta/el-foraster/sant-llorenc-de-morunys/video/5425251/"
-              target="rel"
-              ="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               >Programa "el Foraster" TV3</a
             >
           </li>
@@ -96,6 +100,8 @@
       <div class="portada__situacio animate__animated animate__fadeInUp">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1DtSRb83milT_r5SFMlu2qlHZ8qa0etk&ehbc=2E312F"
+          title="mapa vall de lord"
+          loading="lazy"
         ></iframe>
       </div>
     </div>

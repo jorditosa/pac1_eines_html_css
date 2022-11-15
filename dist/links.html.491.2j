@@ -106,10 +106,10 @@
       <h3>Índex A - Z</h3>
       <p>
         En aquest enllaç podeu consultar tot el
-        <a href="/a-z.html">índex A - Z</a>. Aquesta secció us permet utilitzar-la com a eina
-        informativa i per a la navegació per facilitar l'ús del portal web. L'índex inclou totes les
-        paraules clau utilitzades en aquest web, temes d'interés popular i funcionalitats del mateix
-        web.
+        <a href="/a-z.html" target="_blank">índex A - Z</a>. Aquesta secció us permet utilitzar-la
+        com a eina informativa i per a la navegació per facilitar l'ús del portal web. L'índex
+        inclou totes les paraules clau utilitzades en aquest web, temes d'interés popular i
+        funcionalitats del mateix web.
       </p>
     </section>
 

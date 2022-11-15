@@ -10,6 +10,7 @@
   background-color: lighten($color: $complementario, $amount: 12%);
   width: 90%;
   height: auto;
+  margin: 0 auto;
   border-radius: 3rem;
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@
 
   @media (min-width: $medium) {
     position: fixed;
+    margin: 0;
     top: 0;
     left: 0;
     width: 10rem;

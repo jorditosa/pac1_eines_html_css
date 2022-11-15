@@ -647,6 +647,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3rem;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   display: flex;
   position: fixed;
   bottom: 5vh;
@@ -659,6 +660,7 @@ body::-webkit-scrollbar-thumb {
     width: 10rem;
     height: 100vh;
     border-radius: 0;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -1092,7 +1094,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .presentacio__list--item img {
-  width: 5rem;
+  width: 4rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -1101,7 +1103,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 768px) {
   .presentacio__list--item img {
-    width: 6rem;
+    width: 5rem;
   }
 }
 
@@ -1119,21 +1121,21 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(180deg);
 }
 
-.presentacio__list--item.active dd {
+.presentacio__list--item.active p, .presentacio__list--item.active ol, .presentacio__list--item.active ul {
   height: 100%;
 }
 
-.presentacio__list dt {
+.presentacio__list h3 {
   font-size: 2rem;
 }
 
 @media (min-width: 768px) {
-  .presentacio__list dt {
+  .presentacio__list h3 {
     font-size: 2.8rem;
   }
 }
 
-.presentacio__list dd {
+.presentacio__list p, .presentacio__list ol, .presentacio__list ul {
   text-align: justify;
   height: 0;
   font-size: 1.2rem;
@@ -1142,7 +1144,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
-  .presentacio__list dd {
+  .presentacio__list p, .presentacio__list ol, .presentacio__list ul {
     font-size: 1.4rem;
   }
 }
