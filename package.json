@@ -8,10 +8,13 @@
   ],
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel",
-    "prod": "parcel build",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
     "lint": "esLint src/js/",
-    "lint-fix": "esLint src/js/ --fix"
+    "lint-fix": "esLint src/js/ --fix",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
   },
   "repository": {
     "type": "git",
