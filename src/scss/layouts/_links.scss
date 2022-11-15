@@ -1,0 +1,25 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+.links__list {
+  padding: 5vh 0;
+  &--title {
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  &--description {
+    width: 75%;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    border-bottom: 0.2rem solid $primario;
+
+    & a {
+      color: $primario;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

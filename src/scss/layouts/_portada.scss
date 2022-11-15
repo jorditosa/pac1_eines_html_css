@@ -149,18 +149,21 @@
   }
 }
 
-// Situacio container
+// situacio container
 
 .portada__situacio {
   grid-area: situacio;
 
   & iframe {
+    flex-grow: 1;
     border: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100%;
-    padding-bottom: 15vh;
+    height: 25vh;
 
     @media (min-width: $medium) {
+      height: 100%;
       border-radius: 5rem 5rem 0 0;
       padding-bottom: 0;
     }

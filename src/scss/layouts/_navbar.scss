@@ -10,7 +10,6 @@
   background-color: lighten($color: $complementario, $amount: 12%);
   width: 90%;
   height: auto;
-  margin: 0 auto;
   border-radius: 3rem;
   display: flex;
   justify-content: center;
@@ -18,7 +17,6 @@
 
   @media (min-width: $medium) {
     position: fixed;
-    margin: 0;
     top: 0;
     left: 0;
     width: 10rem;
@@ -61,18 +59,6 @@
           font-size: 1.2rem;
         }
       }
-      & svg {
-        width: 2.8rem;
-        height: 2.8rem;
-        padding: 0.2rem;
-        fill: $dark;
-
-        @media (min-width: $medium) {
-          width: 4rem;
-          height: 4rem;
-          padding: 0.4rem;
-        }
-      }
     }
 
     &--link {
@@ -82,4 +68,33 @@
       align-items: center;
     }
   }
+
+  &__icon {
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+
+    @media (min-width: $medium) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+
+// Iconos
+
+.home-outline {
+  background-image: url('../img/icons/home-outline.svg');
+}
+.grid-outline {
+  background-image: url('../img/icons/grid-outline.svg');
+}
+.list-outline {
+  background-image: url('../img/icons/list-outline.svg');
+}
+.link-outline {
+  background-image: url('../img/icons/link-outline.svg');
+}
+.location-outline {
+  background-image: url('../img/icons/location-outline.svg');
 }
