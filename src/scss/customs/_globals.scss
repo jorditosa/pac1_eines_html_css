@@ -91,10 +91,12 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding: 0 5vw;
+  width: 90%;
+  max-width: 140rem;
+  margin: 0 auto;
 
   @media (min-width: $medium) {
+    width: 100%;
     padding: 0 6vw 0 calc(6vw + 10rem);
   }
 }

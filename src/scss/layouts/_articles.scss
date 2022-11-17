@@ -94,11 +94,11 @@
       transition: color 0.2s;
 
       @media (min-width: $medium) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
       &:hover {
-        color: $complementario;
+        color: $secundario;
       }
 
       &::before {
@@ -112,7 +112,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to left, #fff 95%, $dark 100%);
+        background: linear-gradient(to left, #fff 0%, $complementario 100%);
         border-radius: 1rem;
       }
     }
@@ -121,23 +121,44 @@
 
 .pagination {
   margin-top: 10vh;
-  h3 {
-    text-align: center;
-    padding: 1rem 0;
+
+  &__heading {
     font-size: 2rem;
-    color: $dark;
+    text-align: center;
+    border-bottom: 0.2rem solid $secundario;
   }
   &__articles {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    grid-template-columns: 1fr;
+    column-gap: 5rem;
 
     @media (min-width: $medium) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (min-width: $extra-large) {
-      grid-template-columns: repeat(4, 1fr);
+    h3 {
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      color: $dark;
+    }
+    &--item {
+      & img {
+        object-fit: cover;
+        height: 25vh;
+      }
+      & a {
+        height: 5vh;
+        color: $dark;
+        font-size: 1.6rem;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
     }
   }
 }
