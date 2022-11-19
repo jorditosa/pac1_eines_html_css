@@ -9,10 +9,14 @@
     font-size: 1.8rem;
   }
   &--description {
-    width: 75%;
+    width: 90%;
     padding: 1rem 0;
     font-size: 1.4rem;
     border-bottom: 0.2rem solid $primario;
+
+    @media (min-width: $medium) {
+      width: 75%;
+    }
 
     & a {
       color: $primario;

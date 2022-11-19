@@ -1,0 +1,13 @@
+@use './mixins' as *;
+@use './globals' as *;
+
+.text-center {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+.bg-light {
+  background-color: $light;
+}

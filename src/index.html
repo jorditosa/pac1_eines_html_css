@@ -10,7 +10,7 @@
     <link rel="preload" href="./scss/index.scss" as="style" />
     <link rel="stylesheet" href="./scss/index.scss" />
   </head>
-  <body>
+  <body class="bg-dark">
     <header class="header">
       <nav class="navbar animate__animated animate__slideInUp">
         <ul class="navbar__list">
@@ -51,7 +51,6 @@
     <div class="portada">
       <header class="portada__header animate__animated animate__fadeInLeft">
         <h1 class="portada__section--title">La Vall de Lord</h1>
-        <p>La vall que t'enamorarà, naturalment.</p>
       </header>
       <main class="portada__categories animate__animated animate__fadeInLeft">
         <a href="./categories.html" class="portada__section--title">Categories</a>
@@ -105,6 +104,27 @@
         ></iframe>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <h2 class="footer__heading">Uneix-te a la Vall de Lord</h2>
+          <form class="footer__form">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Introdueix el teu email" />
+            <input type="submit" value="Envia" class="btn" />
+          </form>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom--social">
+            <img src="./img/icons/logo-instagram.svg" alt="logo instagram" class="social-logo" />
+            <img src="./img/icons/logo-facebook.svg" alt="logo faecbook" class="social-logo" />
+          </div>
+          <p class="footer__copyright">Portal-La Vall de Lord</p>
+          <p class="footer__copyright">Tots els drets reservats &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/index.js" type="module"></script>
   </body>

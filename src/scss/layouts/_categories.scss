@@ -10,8 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-top: 0.3rem solid $primario;
-    border-bottom: 0.3rem solid $complementario;
+    border-bottom: 0.1rem solid $complementario;
 
     @media (min-width: $medium) {
       flex-direction: row;
@@ -20,9 +19,9 @@
   &--item {
     width: 100%;
     color: $primario;
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 700;
     overflow: hidden;
     cursor: pointer;
@@ -33,15 +32,16 @@
     }
 
     @media (min-width: $small) {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
     @media (min-width: $large) {
-      font-size: 2rem;
+      padding: 0.4rem 0;
+      font-size: 1.4rem;
     }
   }
 
   & .active-link {
-    background: linear-gradient(180deg, $primario 75%, $complementario 100%);
+    background: linear-gradient(180deg, $light 0%, $primario 50%, $complementario 100%);
     color: $white;
     cursor: pointer;
   }

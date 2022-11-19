@@ -7,11 +7,11 @@
   right: 0;
   bottom: 5vh;
   z-index: 99;
-  background-color: lighten($color: $complementario, $amount: 12%);
+  background-color: lighten($color: $complementario, $amount: 10%);
   width: 90%;
   height: auto;
   margin: 0 auto;
-  border-radius: 3rem;
+  border-radius: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
