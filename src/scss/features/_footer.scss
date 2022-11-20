@@ -19,9 +19,13 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-wdith: $medium) {
+    height: 100vh;
+  }
+
   &__top {
     height: 100%;
-    padding: 25vh 0;
+    padding: 15vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
