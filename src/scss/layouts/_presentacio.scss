@@ -14,20 +14,8 @@
     overflow: hidden;
     transition: all 0.4s;
 
-    & img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 4rem;
-      transform: rotate(0);
-
-      @media (min-width: $medium) {
-        width: 5rem;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
+    & ol {
+      padding-left: 3rem;
     }
   }
 
@@ -36,12 +24,23 @@
     box-shadow: 0 0.3rem 0.6rem $dark, 0 0.3rem 0.6rem $dark;
     transition: all 0.4s;
 
-    & img {
+    & .arrow-icon {
       transform: rotate(180deg);
     }
+
+    &--itemGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @media (min-width: $medium) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
     & p,
     & ol,
-    & ul {
+    & ul,
+    & .itemGrid-img {
       height: 100%;
     }
   }
@@ -54,7 +53,8 @@
 
   & p,
   & ol,
-  & ul {
+  & ul,
+  & .itemGrid-img {
     position: relative;
     font-size: 1.2rem;
     text-align: justify;
@@ -64,6 +64,39 @@
     @media (min-width: $medium) {
       font-size: 1.4rem;
     }
+  }
+
+  &--itemGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-height: 40vh;
+    gap: 0.2rem;
+
+    & img {
+      object-fit: cover;
+    }
+
+    @media (min-width: $medium) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  transform: rotate(0);
+
+  @media (min-width: $medium) {
+    width: 5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
