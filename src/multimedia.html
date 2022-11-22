@@ -48,11 +48,28 @@
       </nav>
     </header>
 
+    <section class="container">
+      <h2 class="header__heading">Multimèdia</h2>
+    </section>
+
     <main class="main-content container multimedia__container" data-aos="zoom-in">
-      <video id="my-player" class="video-js" data-setup='{}'>
-        <source src="./img/video-mountain.mp4">
-        El teu navegador no soporta el format d'aquest video.
-      </video>
+      <div class="multimedia__video" data-aos="fade-left">
+        <h3>Capítol 04 <cite>La Vall de Lord</cite> programa <strong>Bell Mig</strong></h3>
+        <video class="videoItem video-js vjs-theme-forest" data-setup="{}" controls>
+          <source src="./media/vall_de_lord.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="multimedia__video" data-aos="fade-left">
+        <h3>Sant Llorenç de Morunys from air and ground <cite>Kyryl S</cite></h3>
+        <video class="videoItem video-js vjs-theme-forest" data-setup="{}" controls>
+          <source src="./media/santllorens_aerial.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="multimedia__nota">
+        Nota: Els videos son de baixa qualitat en aquest apartat, per millor qualitat consulteu la
+        pàgina
+        <a href="./links.html">on trobareu els links originals dels vídeos</a>
+      </p>
     </main>
 
     <footer class="footer">
@@ -75,6 +92,7 @@
         </div>
       </div>
     </footer>
+    <script src="../node_modules/video.js/dist/video.js"></script>
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>

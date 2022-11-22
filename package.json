@@ -41,6 +41,7 @@
     "video.js": "^7.20.3"
   },
   "dependencies": {
+    "@videojs/themes": "^1.0.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "videojs-css": "^1.2.0"
