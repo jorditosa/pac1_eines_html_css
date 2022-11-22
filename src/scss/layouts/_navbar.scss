@@ -7,7 +7,8 @@
   right: 0;
   bottom: 5vh;
   z-index: 99;
-  background-color: lighten($color: $complementario, $amount: 10%);
+  background-color: lighten($color: $complementario, $amount: 15%);
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem $light;
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInNav 0.8s ease-in;
 
   @media (min-width: $medium) {
     position: fixed;
@@ -31,9 +33,13 @@
     padding: 0.2rem;
     display: flex;
     justify-content: space-around;
+    
+    
     @media (min-width: $medium) {
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      height: 100%;
+      padding: 1rem;
     }
     &--item {
       width: 20%;
@@ -99,4 +105,18 @@
 }
 .location-outline {
   background-image: url('../img/icons/location-outline.svg');
+}
+
+// Keyframe navigation
+
+@keyframes fadeInNav {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+  
 }

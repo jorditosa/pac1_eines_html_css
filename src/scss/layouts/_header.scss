@@ -1,0 +1,43 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+.header {
+  position: relative;
+
+  &__title {
+    margin: 20vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__heading {
+    text-align: center;
+    color: $primario;
+    font-size: 3rem;
+    padding: 3rem 0;
+    text-shadow: 0.1rem 0.1rem 0.2rem $complementario;
+    @media (min-width: $medium) {
+      font-size: 5rem;
+      padding: 2rem 0;
+    }
+    &--description {
+      font-size: 1.4rem;
+      padding: 2rem 0;
+    }
+  }
+  h2 {
+    color: $complementario;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem lighten($color: $secundario, $amount: 25%);
+
+    @media (min-width: $medium) {
+      font-size: 4rem;
+    }
+    @media (min-width: $large) {
+      font-size: 4.6rem;
+    }
+  }
+}
+
+// efecto Loading

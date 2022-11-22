@@ -54,10 +54,10 @@
 
   & + p {
     color: $white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-shadow: 0.2rem 0.2rem 2rem $dark;
     @media (min-width: $medium) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -100,12 +100,23 @@
   @media (min-width: $medium) {
     height: 100%;
   }
+
 }
 
 // Links container
 .portada__links {
   grid-area: links;
-  padding: 0.2rem;
+  padding: 5%;
+
+  &--heading {
+    color: $light;
+    border-bottom: 0.2rem solid $light;
+    text-align: center;
+
+    @media (min-width: $medium) {
+      text-align: start;
+    }
+  }
 
   &--list {
     height: 100%;
@@ -114,12 +125,27 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    list-style: disc;
+
+    @media (min-width: $medium) {
+      align-items: start;
+      gap: 1.2rem;
+    }
+
   }
 
   &--item a {
     color: $white;
     font-size: 2rem;
     font-weight: 700;
+
+    &::before {
+      content: "\02C3";
+      color: $light;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+    }
 
     &:hover {
       cursor: pointer;
@@ -146,12 +172,12 @@
   }
 }
 
-// situacio container
+// Situacio container
 
 .portada__situacio {
   grid-area: situacio;
   margin-bottom: 15vh;
-  height: 30vh;
+  height: 50vh;
 
   @media (min-width: $medium) {
     height: 100%;

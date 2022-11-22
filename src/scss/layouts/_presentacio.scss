@@ -40,7 +40,8 @@
     & p,
     & ol,
     & ul,
-    & .itemGrid-img {
+    & .itemGrid-img,
+    & .mapa-img {
       height: 100%;
     }
   }
@@ -54,7 +55,8 @@
   & p,
   & ol,
   & ul,
-  & .itemGrid-img {
+  & .itemGrid-img,
+  & .mapa-img {
     position: relative;
     font-size: 1.2rem;
     text-align: justify;

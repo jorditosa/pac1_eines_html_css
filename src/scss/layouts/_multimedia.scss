@@ -1,0 +1,44 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+
+.multimedia__advice {
+  padding: 10vh 0;
+  background: linear-gradient(180deg,  $primario 0%, rgba($primario, 0) 100%);
+  & h3 {
+    font-size: 1.6rem;
+    color: $light;
+    
+  }
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & a.multimedia__link {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $light;
+    transition: all 0.4s;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media (min-width: $medium) {
+    & h3 {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+    }
+
+    & a {
+      font-size: 2rem;
+    }
+  }
+}
