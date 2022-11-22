@@ -3,7 +3,7 @@
 
 .multimedia__advice {
   padding: 10vh 0;
-  background: linear-gradient(180deg, $primario 0%, rgba($primario, 0) 100%);
+  background: linear-gradient(180deg, $dark 0%, rgba($primario, 0) 100%);
   & h3 {
     font-size: 1.6rem;
     color: $light;
@@ -15,7 +15,7 @@
 
   & a.multimedia__link {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: $light;
     transition: all 0.4s;

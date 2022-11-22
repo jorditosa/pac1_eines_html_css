@@ -100,7 +100,6 @@
   @media (min-width: $medium) {
     height: 100%;
   }
-
 }
 
 // Links container
@@ -125,25 +124,24 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    list-style: disc;
+    list-style: none;
 
     @media (min-width: $medium) {
       align-items: start;
       gap: 1.2rem;
     }
-
   }
 
   &--item a {
     color: $white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
 
     &::before {
-      content: "\02C3";
+      content: '\02C3';
       color: $light;
       font-weight: bold;
-      display: inline-block; 
+      display: inline-block;
       width: 1em;
     }
 
