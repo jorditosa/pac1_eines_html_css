@@ -83,7 +83,7 @@ body {
   height: 100%;
   margin: 0 0 3rem 0;
   position: relative;
-  @include bgBorder($primario);
+  @include borderTop($complementario);
 }
 
 img {
