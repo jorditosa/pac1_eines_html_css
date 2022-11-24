@@ -33,19 +33,8 @@
 .portada__section--title {
   color: $white;
   font-weight: 700;
-  font-size: 2.2rem;
   text-shadow: 0.2rem 0.2rem 1rem $dark;
   transition: transform 0.3s ease;
-
-  @media (min-width: $small) {
-    font-size: 2.6rem;
-  }
-  @media (min-width: $medium) {
-    font-size: 3.8rem;
-  }
-  @media (min-width: $large) {
-    font-size: 5rem;
-  }
 
   &:hover {
     cursor: pointer;
@@ -54,11 +43,7 @@
 
   & + p {
     color: $white;
-    font-size: 1.2rem;
     text-shadow: 0.2rem 0.2rem 2rem $dark;
-    @media (min-width: $medium) {
-      font-size: 1.6rem;
-    }
   }
 }
 
@@ -188,5 +173,21 @@
     border: none;
     margin: 0;
     padding: 0;
+  }
+}
+
+// Text portada
+
+.portada__description {
+  margin: 1vh auto;
+
+  @media (min-width: $medium) {
+    margin: 5vh auto;
+  }
+  h2 {
+    color: $light;
+  }
+  p {
+    color: $light;
   }
 }

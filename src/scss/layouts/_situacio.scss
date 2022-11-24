@@ -48,41 +48,10 @@
 }
 
 .situacio__mapa {
-  height: 50vh;
+  display: block;
+  width: 100%;
+  height: 40rem;
   outline: none;
   border: 0.1rem solid #31493c;
-  border-radius: 1rem;
-  margin: 1rem 0 5rem 0;
   box-shadow: 0 0.1rem 0.3rem #b3efb2;
-  display: flex;
-
-  @media (min-width: $medium) {
-    height: 75vh;
-  }
-
-  & iframe {
-    width: 100%;
-    border-radius: 1rem;
-    margin: 0 auto;
-  }
-
-  // Map areas css
-
-  & #area1::before {
-    content: '';
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    background-color: $error;
-    border-radius: 50%;
-    opacity: 0.7;
-
-    &:hover {
-      transform: scale(1.5);
-      cursor: col-resize;
-    }
-  }
 }

@@ -28,9 +28,11 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "aos": "^2.3.4",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "leaflet": "^1.9.3",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1",
@@ -42,8 +44,6 @@
   },
   "dependencies": {
     "@videojs/themes": "^1.0.1",
-    "animate.css": "^4.1.1",
-    "aos": "^2.3.4",
     "videojs-css": "^1.2.0"
   }
 }
