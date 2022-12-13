@@ -1,0 +1,44 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+.logo {
+  position: relative;
+  border-bottom: 6rem dotted $light;
+  & .base-1 {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 10rem solid $primario;
+  }
+  & .base-2 {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    left: 1rem;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 10rem solid $white;
+  }
+  & .base-3 {
+    position: absolute;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: 2rem;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 10rem solid $secundario;
+  }
+
+  &::before {
+    content: 'la Vall de Lord';
+    color: $dark;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 0.2rem 0.2rem 0.2rem $light;
+  }
+}
