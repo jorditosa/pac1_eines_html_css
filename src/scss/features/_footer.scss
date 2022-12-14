@@ -7,13 +7,13 @@
   color: $light;
   position: relative;
 
-  background-image: linear-gradient(to bottom, transparentize($dark, 0.6) 0%, $dark 100%),
+  background-image: linear-gradient(to bottom, transparentize($dark, 0.5) 0%, $dark 100%),
     url(../img/hero_footer.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  clip-path: ellipse(175% 100% at 50% 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
 
   display: flex;
   flex-direction: column;
@@ -25,11 +25,15 @@
 
   &__top {
     height: 100%;
-    padding: 15vh 0;
+    padding: 5vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-wdith: $medium) {
+      padding: 15vh 0;
+    }
   }
 
   &__heading {
@@ -55,14 +59,17 @@
     justify-content: start;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     @media (min-width: $large) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      flex-direction: row;
+      justify-content: space-around;
     }
 
     &--social {
       display: flex;
+      margin: 1vh 0;
 
       & .social-logo {
         width: 5rem;
@@ -73,9 +80,13 @@
         &:hover {
           cursor: pointer;
           opacity: 0.6;
-          transition: opacity 0.6s;
+          transition: opacity 0.5s;
         }
       }
+    }
+
+    &--copyright {
+      margin: 1vh 0;
     }
   }
 }
@@ -87,4 +98,44 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.footer__nav {
+  width: 100%;
+  border: 0.2rem solid $complementario;
+  border-radius: 1rem;
+  margin: 1vh 0;
+  &--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+
+    @media (min-width: $medium) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &--item {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    &--link {
+      color: $light;
+      font-size: 1.2rem;
+
+      @media (min-width: $medium) {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.5s;
+      }
+    }
+  }
 }

@@ -174,9 +174,13 @@ input:not([type='submit']) {
   padding: 1rem 0;
   border: none;
   outline: none;
-  border-bottom: 0.4rem solid $complementario;
+  border: 0.2rem solid $complementario;
   border-radius: 1rem;
   transition: border-color 0.4s;
+
+  @media (min-width: $medium) {
+    padding: 1rem 10vw;
+  }
 
   &::placeholder,
   &:focus,

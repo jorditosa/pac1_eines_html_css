@@ -118,10 +118,12 @@
           <div class="presentacio__list--itemGrid">
             <picture class="itemGrid-picture">
               <source srcset="img/prat-bacies.jpg?as=webp" type="image/webp" />
+              <source srcset="img/prat-bacies.jpg?as=avif" type="image/avif" />
               <img src="./img/prat-bacies.jpg" alt="imatge prat bacies" class="itemGrid-img" />
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/mirador_creu.jpg?as=webp" type="image/webp" />
+              <source srcset="img/mirador_creu.jpg?as=avif" type="image/avif" />
               <img
                 src="./img/mirador_creu.jpg"
                 alt="imatge mirador creu codo"
@@ -130,6 +132,7 @@
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/rest_fonts_cardener.jpg?as=webp" type="image/webp" />
+              <source srcset="img/rest_fonts_cardener.jpg?as=avif" type="image/avif" />
               <img
                 src="./img/rest_fonts_cardener.jpg"
                 alt="imatge restaurant fonts cardener"
@@ -138,10 +141,12 @@
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/santuari_lord.jpg?as=webp" type="image/webp" />
+              <source srcset="img/santuari_lord.jpg?as=avif" type="image/avif" />
               <img src="./img/santuari_lord.jpg" alt="imatge santuari lord" class="itemGrid-img" />
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/catedral_solsona.jpg?as=webp" type="image/webp" />
+              <source srcset="img/catedral_solsona.jpg?as=avif" type="image/avif" />
               <img
                 src="./img/catedral_solsona.jpg"
                 alt="imatge catedral solsona"
@@ -150,6 +155,7 @@
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/neu_portcomte.jpg?as=webp" type="image/webp" />
+              <source srcset="img/neu_portcomte.jpg?as=avif" type="image/avif" />
               <img
                 src="./img/neu_portcomte.jpg"
                 alt="imatge port de comte hivern"
@@ -158,6 +164,7 @@
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/activitats_aventura.jpg?as=webp" type="image/webp" />
+              <source srcset="img/activitats_aventura.jpg?as=avif" type="image/avif" />
               <img
                 src="./img/activitats_aventura.jpg"
                 alt="imatge barranquisme"
@@ -166,6 +173,7 @@
             </picture>
             <picture class="itemGrid-picture">
               <source srcset="img/pont_clop.jpg?as=webp" type="image/webp" />
+              <source srcset="img/pont_clop.jpg?as=avif" type="image/avif" />
               <img src="./img/pont_clop.jpg" alt="imatge pont de clop" class="itemGrid-img" />
             </picture>
           </div>
@@ -232,6 +240,15 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
+          <!-- Logo -->
+          <a href="#index_text">
+            <div class="logo-white">
+              <div class="base-1"></div>
+              <div class="base-2"></div>
+              <div class="base-3"></div>
+              <div class="extra-1"></div>
+            </div>
+          </a>
           <h2 class="footer__heading">Uneix-te a la Vall de Lord</h2>
           <form class="footer__form">
             <label for="email"></label>
@@ -239,13 +256,47 @@
             <input type="submit" value="Envia" class="btn" />
           </form>
         </div>
+        <div class="footer__nav">
+          <ul class="footer__nav--list">
+            <li class="footer__nav--list--item">
+              <a href="index.html" class="footer__nav--list--link" title="Portada">
+                <div class="footer__icon home-outline"></div>
+                <span>Inici</span>
+              </a>
+            </li>
+            <li class="footer__nav--list--item">
+              <a href="categories.html" class="footer__nav--list--link" title="Categories">
+                <div class="footer__icon grid-outline"></div>
+                <span>Categories</span>
+              </a>
+            </li>
+            <li class="footer__nav--list--item">
+              <a href="presentació.html" class="footer__nav--list--link" title="Presentació">
+                <div class="footer__icon list-outline"></div>
+                <span>Presentació</span>
+              </a>
+            </li>
+            <li class="footer__nav--list--item">
+              <a href="links.html" class="footer__nav--list--link" title="Enllaços">
+                <div class="footer__icon link-outline"></div>
+                <span>Enllaços</span>
+              </a>
+            </li>
+            <li class="footer__nav--list--item">
+              <a href="situacio.html" class="footer__nav--list--link" title="Situació">
+                <div class="footer__icon location-outline"></div>
+                <span>Situació</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer__bottom">
           <div class="footer__bottom--social">
             <img src="./img/icons/logo-instagram.svg" alt="logo instagram" class="social-logo" />
             <img src="./img/icons/logo-facebook.svg" alt="logo faecbook" class="social-logo" />
           </div>
-          <p class="footer__copyright">Portal-La Vall de Lord</p>
-          <p class="footer__copyright">Tots els drets reservats &copy; 2022</p>
+          <p class="footer__bottom--copyright">Portal - La Vall de Lord</p>
+          <p class="footer__bottom--copyright">Tots els drets reservats &copy; 2022</p>
         </div>
       </div>
     </footer>
