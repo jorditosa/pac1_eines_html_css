@@ -1,0 +1,16 @@
+@use './../customs/globals' as *;
+@use './../customs/mixins' as *;
+
+body {
+  animation: blurryLoad 0.8s linear;
+}
+@keyframes blurryLoad {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
