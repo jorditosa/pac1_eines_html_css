@@ -49,10 +49,10 @@
 
   &::before {
     content: 'la Vall de Lord';
-    color: $dark;
+    color: $light;
     font-size: 1.4em;
     font-weight: 700;
-    text-shadow: 0.3rem 0.3rem 0.3rem $light;
+    text-shadow: 0.3rem 0.3rem 0.3rem $dark, -0.3rem -0.3rem 0.3rem $dark;
   }
 }
 

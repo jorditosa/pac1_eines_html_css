@@ -90,7 +90,7 @@
 // Links container
 .portada__links {
   grid-area: links;
-  padding: 5%;
+  padding: 10%;
 
   &--heading {
     color: $light;
@@ -113,7 +113,7 @@
 
     @media (min-width: $medium) {
       align-items: start;
-      gap: 1.2rem;
+      gap: 1rem;
     }
   }
 
@@ -134,6 +134,39 @@
       cursor: pointer;
       text-decoration: underline;
     }
+  }
+}
+
+// efecte CSS portada Links
+.portada__links {
+  overflow: hidden;
+  &::before {
+    content: '';
+    height: 180%;
+    width: 180%;
+    position: absolute;
+    z-index: -1;
+    background: conic-gradient($primario, $secundario, $complementario, $dark, $primario);
+    left: -25%;
+    top: -25%;
+    animation: spinBorder 10s infinite linear;
+  }
+
+  &::after {
+    content: '';
+    background-color: $dark;
+    position: absolute;
+    z-index: -1;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 1rem;
+  }
+}
+@keyframes spinBorder {
+  100% {
+    transform: rotate(-360deg) scale(5);
   }
 }
 
