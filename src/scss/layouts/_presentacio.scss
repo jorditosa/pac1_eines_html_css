@@ -91,12 +91,12 @@
 .arrow-icon {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 4rem;
+  right: 0.4rem;
+  width: 3rem;
   transform: rotate(0);
 
   @media (min-width: $medium) {
-    width: 5rem;
+    width: 4rem;
   }
 
   &:hover {
