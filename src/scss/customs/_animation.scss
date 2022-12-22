@@ -1,0 +1,140 @@
+@use './globals' as *;
+@use './mixins' as *;
+
+.animation {
+  &__branch {
+    background-color: $primario;
+    height: 1rem;
+    width: 10rem;
+    border-radius: 5rem 0 0 5rem;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $dark;
+    z-index: 99;
+  }
+
+  &__owl {
+    background-color: #cfae69;
+    height: 10rem;
+    width: 6rem;
+    border-radius: 4rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 98;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem $dark;
+
+    &--earl,
+    &--earr {
+      height: 0;
+      width: 0;
+      border-bottom: 2.4rem solid #a6813b;
+      border-left: 1.2rem solid transparent;
+      border-right: 1.2rem solid transparent;
+      position: relative;
+    }
+    &--earl {
+      transform: rotate(-40deg);
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 97;
+    }
+    &--earr {
+      transform: rotate(40deg);
+      bottom: 3.4rem;
+      left: 4.6rem;
+      z-index: 97;
+    }
+
+    &--beak {
+      width: 0;
+      height: 0;
+      border-left: 1.2rem solid transparent;
+      border-right: 1.2rem solid transparent;
+      border-top: 2rem solid #ffcc30;
+      border-radius: 50%;
+      position: relative;
+      bottom: 1rem;
+      left: 1.8rem;
+    }
+
+    &--wingL,
+    &--wingR {
+      background-color: #a6813b;
+      height: 3.6rem;
+      width: 1rem;
+      position: relative;
+    }
+
+    &--wingL {
+      border-radius: 2rem 0;
+      bottom: 2.6rem;
+      right: 0.6rem;
+    }
+    &--wingR {
+      border-radius: 0 2rem;
+      bottom: 6.1rem;
+      left: 5.4rem;
+    }
+
+    &--eyeLeft {
+      overflow: hidden;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        background-color: $light;
+        border: 0.2rem solid #a6813b;
+        border-radius: 50%;
+        position: absolute;
+        left: 0.6rem;
+        bottom: 6rem;
+      }
+    }
+
+    &--eyeballL {
+      height: 0.8rem;
+      width: 0.8rem;
+      background-color: #424242;
+      border-radius: 50%;
+      position: absolute;
+      left: 1.4rem;
+      bottom: 6.8em;
+      animation: iris 3s infinite linear;
+    }
+
+    &--eyeRight {
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        background-color: $light;
+        border: 0.2rem solid #a6813b;
+        border-radius: 50%;
+        position: absolute;
+        left: 3.2rem;
+        bottom: 6rem;
+      }
+    }
+
+    &--eyeballR {
+      height: 0.8rem;
+      width: 0.8rem;
+      background-color: #424242;
+      border-radius: 50%;
+      position: absolute;
+      left: 4rem;
+      bottom: 6.8rem;
+      animation: iris 3s infinite linear;
+    }
+  }
+}
+
+@keyframes iris {
+  50% {
+    transform: scale(1.6);
+  }
+}
