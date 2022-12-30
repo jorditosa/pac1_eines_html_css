@@ -9,8 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-    <link rel="preload" href="./scss/index.scss" as="style" />
-    <link rel="stylesheet" href="./scss/index.scss" />
+    <link href="./scss/index.scss" rel="preload" as="style" onload="this.rel='stylesheet'" />
   </head>
   <body class="bg-dark" id="body">
     <header class="header">
@@ -210,12 +209,16 @@
         <div class="footer__bottom">
           <div class="footer__bottom--social">
             <img
+              width="50"
+              height="50"
               src="./img/icons/logo-instagram.svg"
               alt="logo instagram"
               class="social-logo"
               loading="lazy"
             />
             <img
+              width="50"
+              height="50"
               src="./img/icons/logo-facebook.svg"
               alt="logo faecbook"
               class="social-logo"

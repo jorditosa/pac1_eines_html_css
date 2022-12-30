@@ -13,5 +13,5 @@ try {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 } catch (error) {
-  console.log(error);
+  throw new Error(error);
 }
